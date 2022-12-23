@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2189122563356100624}
-  - component: {fileID: 2189122563356100625}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -32,22 +31,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2189122563356100625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2189122563356100638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1952340fbd33c78489299754f43fe2c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thingsToSpawn:
-  - {fileID: 11400000, guid: a6b3abd803bd7534a9b219b72aa4adac, type: 2}
-  - {fileID: 11400000, guid: 5e01e77cb2ba19748ab7b59a662c783b, type: 2}
-  - {fileID: 11400000, guid: b0d9fcb48b291404585ea8b4578e0297, type: 2}
-  objectToSpawn: {fileID: 5303646940410500171, guid: dc41f106b3fb3c444bc3778491cbdd25, type: 3}
-  spawnRate: 5
-  spawnTimer: 0
