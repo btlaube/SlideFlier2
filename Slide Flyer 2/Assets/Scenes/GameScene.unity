@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709383, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
 --- !u!1001 &8526774221096580910
@@ -840,29 +844,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
-      propertyPath: cargoPrefab
+      propertyPath: pickUpPrefab
       value: 
-      objectReference: {fileID: 5869771018505468788, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
+      objectReference: {fileID: 7134526127030316289, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
     - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
-      propertyPath: obstaclePrefab
+      propertyPath: powerUpPrefab
       value: 
-      objectReference: {fileID: 5869771018505468788, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
+      objectReference: {fileID: 8632818572297126456, guid: 0c15ff86ad1e5ba4b808f2155158f0f8, type: 3}
     - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
-      propertyPath: firstPickUpIndex
+      propertyPath: pickUps.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
+      propertyPath: pickUps.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e14b56c94ea2a6041901f6340c4bc53a, type: 2}
+    - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
+      propertyPath: pickUps.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: bb39b8a02afef5b4781a08beb8b5cb12, type: 2}
     - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
       propertyPath: thingsToSpawn.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
-      propertyPath: thingsToSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 44f34be02827e414fb017980c5628df6, type: 2}
-    - target: {fileID: 5143177208257641535, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
-      propertyPath: thingsToSpawn.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5a697250a1359f64297309b83bca4758, type: 2}
     - target: {fileID: 8526774221195429208, guid: 4a461d5f181ee7e449e463a0a8b84a3a, type: 3}
       propertyPath: m_RootOrder
       value: 2

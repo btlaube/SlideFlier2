@@ -218,15 +218,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1952340fbd33c78489299754f43fe2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingsToSpawn:
-  - {fileID: 11400000, guid: a6b3abd803bd7534a9b219b72aa4adac, type: 2}
-  - {fileID: 11400000, guid: 5e01e77cb2ba19748ab7b59a662c783b, type: 2}
-  obstaclePrefab: {fileID: 5303646940410500171, guid: dc41f106b3fb3c444bc3778491cbdd25, type: 3}
-  pickUpPrefab: {fileID: 2355454778057067059, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
+  cargos:
+  - {fileID: 11400000, guid: 44f34be02827e414fb017980c5628df6, type: 2}
+  - {fileID: 11400000, guid: 5a697250a1359f64297309b83bca4758, type: 2}
+  powerUps:
+  - {fileID: 11400000, guid: d481a87b7e9f76c44ad19cf016c8ba97, type: 2}
+  - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}
+  - {fileID: 11400000, guid: 8a84a1b4f79de2e4d957e3a3c746091d, type: 2}
+  - {fileID: 11400000, guid: 668d9c95103ad0846be1017e06cb7d8a, type: 2}
+  - {fileID: 11400000, guid: 2360a128edffd5b49bbc48d953192d1a, type: 2}
+  - {fileID: 11400000, guid: 142169717e4242f43b1a743b0979a65d, type: 2}
+  - {fileID: 11400000, guid: 1763b56bf4c97594bbbd68073747a1b1, type: 2}
+  - {fileID: 11400000, guid: c35996ea63f12ac46b88f92ec6b7f819, type: 2}
+  cargoPrefab: {fileID: 5080674909731467013, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
+  powerUpPrefab: {fileID: 0}
   spawnRate: 3
   missleRate: 0.3
   pickUpRate: 1
-  firstPickUpIndex: 3
+  firstPickUpIndex: 2
   spawnerList: []
 --- !u!1 &8526774222284663593
 GameObject:

@@ -8,7 +8,7 @@ public class CargoBehavior : MonoBehaviour {
 
     [SerializeField] private GameObject pickUpPrefab;
     
-    [SerializeField] private PlayerScoreInt playerScore;
+    [SerializeField] private PlayerStats playerStats;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private int currentHealth;
@@ -36,10 +36,9 @@ public class CargoBehavior : MonoBehaviour {
     }
 
     void Die() {
-        //Instantiate(deathEffect, transform.position, Quaternion.identity);
         GameObject newPickUp = Instantiate(pickUpPrefab, transform.position, Quaternion.identity, transform.parent);
         newPickUp.GetComponent<PickUpBehavior>().pickUpObject = cargoObject.drop;
-        playerScore.value++;
+        playerStats.playerScore.value++;
         Destroy(gameObject);
     }
 

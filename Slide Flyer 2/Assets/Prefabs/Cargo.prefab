@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5869771018505468788
+--- !u!1 &5080674909731467013
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7439413730287334436}
-  - component: {fileID: 3895521402223551193}
-  - component: {fileID: 2738565691748904832}
-  - component: {fileID: 8334518332726269747}
-  - component: {fileID: 5980596547326891777}
+  - component: {fileID: 8127211797861015637}
+  - component: {fileID: 2447740887293851304}
+  - component: {fileID: 3600317502815337457}
+  - component: {fileID: 7232107064532616002}
+  - component: {fileID: 1752387803204343039}
   m_Layer: 0
   m_Name: Cargo
   m_TagString: Untagged
@@ -20,13 +20,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7439413730287334436
+--- !u!4 &8127211797861015637
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869771018505468788}
+  m_GameObject: {fileID: 5080674909731467013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3895521402223551193
+--- !u!212 &2447740887293851304
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869771018505468788}
+  m_GameObject: {fileID: 5080674909731467013}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,14 +87,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &2738565691748904832
+--- !u!50 &3600317502815337457
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869771018505468788}
+  m_GameObject: {fileID: 5080674909731467013}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -108,13 +108,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8334518332726269747
+--- !u!61 &7232107064532616002
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869771018505468788}
+  m_GameObject: {fileID: 5080674909731467013}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -134,18 +134,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5980596547326891777
+--- !u!114 &1752387803204343039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5869771018505468788}
+  m_GameObject: {fileID: 5080674909731467013}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fd5932dfb3ce2f49a3395f843773d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpPrefab: {fileID: 2355454778057067059, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
-  playerScore: {fileID: 11400000, guid: d9cf64b27e532b743b5aeb1757860800, type: 2}
   cargoObject: {fileID: 0}
+  pickUpPrefab: {fileID: 7134526127030316289, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}

@@ -26,8 +26,7 @@ public class PickUpBehavior : MonoBehaviour {
         //When this pick up object collides with the player
             //Activate this pickup
             //Delete this pick up
-        PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
-        if (playerHealth != null) {
+        if (hitInfo.tag == "Player") {
             //Activate this pickup
             Ability();
             Destroy(gameObject);

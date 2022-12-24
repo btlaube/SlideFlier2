@@ -12,7 +12,6 @@ public class PlayerFire : MonoBehaviour
     //[SerializeField] private int currentAmmo;
     [SerializeField] private PlayerAmmoInt currentAmmo;
     [SerializeField] private PlayerAmmoInt maxAmmo;
-    [SerializeField] private PlayerAmmoInt startingAmmo;
     private Transform bulletOrigin;
 
     [SerializeField] private float fireRate = 0.5f;
@@ -24,7 +23,7 @@ public class PlayerFire : MonoBehaviour
 
     void Start() {
         //playerAmmo.currentAmount
-        currentAmmo.value = startingAmmo.value;
+        currentAmmo.value = maxAmmo.value;
         fireTimer = Time.deltaTime;
     }
 
