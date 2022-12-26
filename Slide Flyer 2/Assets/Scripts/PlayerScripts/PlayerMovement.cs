@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    
+
     void Update() {
         if (Input.touchCount > 0 ) {
 

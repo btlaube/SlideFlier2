@@ -5,24 +5,22 @@ using TMPro;
 
 public class GameCanvasScript : MonoBehaviour {
     
-    [SerializeField] private PlayerHealthInt playerHealth;
-    [SerializeField] private PlayerAmmoInt playerAmmo;
-    [SerializeField] private PlayerScoreInt playerScore;
+    [SerializeField] private PlayerStats playerStats;
 
-    [SerializeField] private TMP_Text playerHealthText;
+    //[SerializeField] private TMP_Text playerHealthText;
     [SerializeField] private TMP_Text playerAmmoText;
     [SerializeField] private TMP_Text playerScoreText;
 
     void Start() {
-        playerHealthText.text = $"HP: {playerHealth.value}";
-        playerAmmoText.text = $"Ammo: {playerAmmo.value}";
-        playerScoreText.text = $"Score: {playerScore.value}";
+        //playerHealthText.text = $"HP: {playerStats.playerCurrentHealth.value}";
+        playerAmmoText.text = $"{playerStats.playerCurrentAmmo.value}";
+        playerScoreText.text = $"{playerStats.playerScore.value}";
     }
 
     void Update() {
-        playerHealthText.text = $"HP: {playerHealth.value}";
-        playerAmmoText.text = $"Ammo: {playerAmmo.value}";
-        playerScoreText.text = $"Score: {playerScore.value}";
+        //playerHealthText.text = $"HP: {playerStats.playerCurrentHealth.value}";
+        playerAmmoText.text = $"{playerStats.playerCurrentAmmo.value}";
+        playerScoreText.text = $"{playerStats.playerScore.value}";
     }
 
 }

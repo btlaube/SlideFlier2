@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5391a954e4e7bc45ba5376abe6cbef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteScale: {fileID: 11400000, guid: 0b4f75c61f6961445aa55b1fb00fa1f7, type: 2}
 --- !u!114 &5143177208257641535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +232,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1763b56bf4c97594bbbd68073747a1b1, type: 2}
   - {fileID: 11400000, guid: c35996ea63f12ac46b88f92ec6b7f819, type: 2}
   cargoPrefab: {fileID: 5080674909731467013, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
-  powerUpPrefab: {fileID: 0}
+  powerUpPrefab: {fileID: 8632818572297126456, guid: 0c15ff86ad1e5ba4b808f2155158f0f8, type: 3}
   spawnRate: 3
   missleRate: 0.3
   pickUpRate: 1

@@ -40,7 +40,7 @@ public class SpawnerScript : MonoBehaviour {
 
     private void Spawn() {
         foreach (Transform spawner in transform) {
-            bool spawnCargo = Random.value < 0.2;
+            bool spawnCargo = Random.value < 0.8;
 
             if (spawnCargo) {
                 GameObject newCargo = Instantiate(cargoPrefab, spawner.position, Quaternion.identity, spawner);
