@@ -478,6 +478,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1424391904 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2631966343103838389, guid: d2f31a8945f52e44bbc93405df8ecc10, type: 3}
+  m_PrefabInstance: {fileID: 953765623844896697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473597820
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +723,25 @@ MonoBehaviour:
   constraint: 1
   camera: {fileID: 1814584978}
   executeInUpdate: 1
+--- !u!1 &2048353393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1578886925981689365, guid: d2f31a8945f52e44bbc93405df8ecc10, type: 3}
+  m_PrefabInstance: {fileID: 953765623844896697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2048353398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048353393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14ed9911a8f0da4d8def8d907f67fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpsParent: {fileID: 1424391904}
+  powerUpSlot: {fileID: 4444778390255293464, guid: bf86e00266878c947852954d0b3668bf, type: 3}
 --- !u!1001 &953765623844896697
 PrefabInstance:
   m_ObjectHideFlags: 0

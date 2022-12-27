@@ -221,7 +221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 523521183, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpObject: {fileID: 0}
-  icon: {fileID: 0}
+  icon: {fileID: 696753678306200739}
 --- !u!1 &7561263890452645839
 GameObject:
   m_ObjectHideFlags: 0

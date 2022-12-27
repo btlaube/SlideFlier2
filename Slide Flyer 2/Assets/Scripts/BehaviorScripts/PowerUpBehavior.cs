@@ -10,9 +10,13 @@ public class PowerUpBehavior : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
+    //Add power up to display
+    [SerializeField] private PowerUpCanvasScript powerUpCanvas;
+
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        powerUpCanvas = GameObject.Find("Power Up Canvas").GetComponent<PowerUpCanvasScript>();
     }
 
     void Start() {
@@ -28,6 +32,7 @@ public class PowerUpBehavior : MonoBehaviour {
             //Activate this pickup
             Ability();
             //Add Power Up Slot to Power Up Grid in Power Up Canvas
+            powerUpCanvas.AddPowerUp(powerUpObject);
             Destroy(gameObject);
         }
     }
