@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657dc984910f67e4599141414b835594, type: 3}
+  m_Script: {fileID: 11500000, guid: d6de210805e573640ad05c28e8cf1b00, type: 3}
   m_Name: Clone
   m_EditorClassIdentifier: 
   sprite: {fileID: -871384523, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
   speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
+  duration: 10
+  clonePrefab: {fileID: 8902848937581629085, guid: 7358bdfa360dc164b99368660c4e63d5, type: 3}

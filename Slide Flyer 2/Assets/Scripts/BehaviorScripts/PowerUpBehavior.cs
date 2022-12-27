@@ -29,31 +29,10 @@ public class PowerUpBehavior : MonoBehaviour {
             //Activate this pickup
             //Delete this pick up
         if (hitInfo.tag == "Player") {
-            //Activate this pickup
-            Ability();
             //Add Power Up Slot to Power Up Grid in Power Up Canvas
-            powerUpCanvas.AddPowerUp(powerUpObject);
+            PowerUpManager.instance.Add(powerUpObject);
             Destroy(gameObject);
         }
-    }
-
-    void Ability() {
-        //Mystery Item 
-        //Cloud with question marks
-            //Could be: ammo (any type, power up, spare parts, etc…)
-        //Clone plane: Adds a double with all current upgrades
-        //Rapid Fire: Increase fire rate
-            //Add fire rate to PlayerStats
-        //Big Bullets: Increased bullet size
-            //Add equipped ProjectileObject to PlayerStats
-            //Change equipped ProjectileObject
-        //Side guns
-            //Add two more ProjectileOrigin to Player
-        //Explosive rounds
-            //Change equipped ProjectileObject
-        //Infinite Ammo
-        //Pick up magnet
-
     }
 
 }

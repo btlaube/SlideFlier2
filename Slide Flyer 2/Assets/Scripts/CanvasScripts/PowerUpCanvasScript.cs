@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUpCanvasScript : MonoBehaviour {
     
-    [SerializeField] private Transform powerUpsParent;
-    [SerializeField] private GameObject powerUpSlot;
+    public Transform powerUpsParent;
+    
+    PowerUpManager powerUpManager;
 
-    void Awake() {
-        powerUpsParent = transform.GetChild(0);
+    void Start() {
+        powerUpManager = PowerUpManager.instance;
+        powerUpManager.onPowerUpChangedCallback += UpdateCanvas;
     }
 
-    public void AddPowerUp(PowerUpObject powerUpObject) {
-        GameObject newPowerUpSlot = Instantiate(powerUpSlot, powerUpsParent.position, Quaternion.identity, powerUpsParent);
-        newPowerUpSlot.GetComponent<PowerUpSlotBehavior>().powerUpObject = powerUpObject;
+    void UpdateCanvas() {
+        PowerUpSlotBehavior[] slots = itemsParent.GetComponentsInChildren<PowerUpSlotBehavior>();
+
+        
     }
 
 }
