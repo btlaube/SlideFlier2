@@ -36,8 +36,10 @@ public class CargoBehavior : MonoBehaviour {
     }
 
     void Die() {
-        GameObject newPickUp = Instantiate(pickUpPrefab, transform.position, Quaternion.identity, transform.parent);
-        newPickUp.GetComponent<PickUpBehavior>().pickUpObject = cargoObject.drop;
+        if (cargoObject.drop != null) {
+            GameObject newPickUp = Instantiate(pickUpPrefab, transform.position, Quaternion.identity, transform.parent);
+            newPickUp.GetComponent<PickUpBehavior>().pickUpObject = cargoObject.drop;
+        }
         playerStats.playerScore.value++;
         Destroy(gameObject);
     }

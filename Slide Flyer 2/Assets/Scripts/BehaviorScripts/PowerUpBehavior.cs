@@ -27,6 +27,7 @@ public class PowerUpBehavior : MonoBehaviour {
         if (hitInfo.tag == "Player") {
             //Activate this pickup
             Ability();
+            //Add Power Up Slot to Power Up Grid in Power Up Canvas
             Destroy(gameObject);
         }
     }

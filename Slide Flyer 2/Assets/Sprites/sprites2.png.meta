@@ -473,7 +473,7 @@ TextureImporter:
         width: 7
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,6 +481,69 @@ TextureImporter:
       bones: []
       spriteID: dc5427983c405704d83de438047278f2
       internalID: -2045229021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites2_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6014eee4d0f45444a1137961bc660f7
+      internalID: 2059489864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites2_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 137
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c89b640c12d3524f90c10806b19e2ea
+      internalID: 777928737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites2_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 133
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9cf12b759d8bd4c97b65fb63037ee8
+      internalID: 1450531398
       vertices: []
       indices: 
       edges: []
@@ -496,7 +559,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      sprites2_18: 777928737
       sprites2_15: -1123318468
+      sprites2_17: 2059489864
+      sprites2_19: 1450531398
       sprites2_1: 760893763
       sprites2_2: 1803687111
       sprites2_8: -665255195

@@ -182,7 +182,7 @@ Transform:
   m_GameObject: {fileID: 8526774221195429211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.50011, z: 0}
-  m_LocalScale: {x: 0.8546875, y: 0.8546875, z: 1}
+  m_LocalScale: {x: 0.8546875, y: 0.8546875, z: 0.8546875}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7508763528496775850}
@@ -206,7 +206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5391a954e4e7bc45ba5376abe6cbef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteScale: {fileID: 11400000, guid: 0b4f75c61f6961445aa55b1fb00fa1f7, type: 2}
 --- !u!114 &5143177208257641535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +221,7 @@ MonoBehaviour:
   cargos:
   - {fileID: 11400000, guid: 44f34be02827e414fb017980c5628df6, type: 2}
   - {fileID: 11400000, guid: 5a697250a1359f64297309b83bca4758, type: 2}
+  - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
   powerUps:
   - {fileID: 11400000, guid: d481a87b7e9f76c44ad19cf016c8ba97, type: 2}
   - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}

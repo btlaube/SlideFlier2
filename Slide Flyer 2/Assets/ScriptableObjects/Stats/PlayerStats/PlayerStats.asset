@@ -15,6 +15,6 @@ MonoBehaviour:
   playerCurrentHealth: {fileID: 11400000, guid: 4d5da68bd863ea94a86f112ab54e6251, type: 2}
   playerMaxHealth: {fileID: 11400000, guid: b6b5f20a4d52e3541bdaf518b6cc26cb, type: 2}
   playerScore: {fileID: 11400000, guid: d9cf64b27e532b743b5aeb1757860800, type: 2}
-  playerHighscore: {fileID: 11400000, guid: d9cf64b27e532b743b5aeb1757860800, type: 2}
+  playerHighscore: {fileID: 11400000, guid: 86e2f50386450c947a889086c989a5a7, type: 2}
   playerCurrentAmmo: {fileID: 11400000, guid: e7b80b896b0c9f44b89c77f8846a6d00, type: 2}
   playerMaxAmmo: {fileID: 11400000, guid: f89249ab98e608b4e85ed24339cbd555, type: 2}
