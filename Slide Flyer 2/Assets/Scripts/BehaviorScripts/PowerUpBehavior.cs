@@ -29,7 +29,7 @@ public class PowerUpBehavior : MonoBehaviour {
             //Activate this pickup
             //Delete this pick up
         if (hitInfo.tag == "Player") {
-            //Add Power Up Slot to Power Up Grid in Power Up Canvas
+            //Add Power Up to power up manager
             PowerUpManager.instance.Add(powerUpObject);
             Destroy(gameObject);
         }

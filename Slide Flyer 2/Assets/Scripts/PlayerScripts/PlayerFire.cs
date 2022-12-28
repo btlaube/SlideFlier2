@@ -42,7 +42,7 @@ public class PlayerFire : MonoBehaviour
     }
 
     void Shoot() {
-        GameObject newProjectile = Instantiate(projectile, bulletOrigin.position, Quaternion.identity, transform);
+        GameObject newProjectile = Instantiate(projectile, bulletOrigin.position, bulletOrigin.rotation, bulletOrigin);
         newProjectile.GetComponent<ProjectileBehavior>().projectileObject = projectileObject;
         currentAmmo.value--;
     }

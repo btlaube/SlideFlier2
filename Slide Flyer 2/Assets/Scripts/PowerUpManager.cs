@@ -28,28 +28,23 @@ public class PowerUpManager : MonoBehaviour {
 
     public void Add(PowerUpObject powerUp) {
         if (powerUps.Contains(powerUp)) {
-            powerUp.runtimeCount++;
+            powerUp.count++;
         }
         else {
             powerUps.Add(powerUp);
+            powerUp.count++;
         }
 
-        if (onPowerUpChangedCallback != null) {
+        if(onPowerUpChangedCallback != null)
             onPowerUpChangedCallback.Invoke();
-        }
     }
 
     public void Remove(PowerUpObject powerUp) {
-        if (powerUp.runtimeCount > 1) {
-            powerUp.runtimeCount--;
-        }
-        else {
-            powerUps.Remove(powerUp);
-        }
+        powerUp.count = 0;
+        powerUps.Remove(powerUp);
 
-        if (onPowerUpChangedCallback != null) {
+        if(onPowerUpChangedCallback != null)
             onPowerUpChangedCallback.Invoke();
-        }
     }
 
 }

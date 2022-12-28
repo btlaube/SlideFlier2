@@ -10,7 +10,6 @@ public class PowerUpSlotBehavior : MonoBehaviour {
     [SerializeField] private Image icon;
     private GameObject player;
 
-    public int powerUpCount;
     [SerializeField] private TMP_Text countText;
 
     public float totalTime;
@@ -18,24 +17,29 @@ public class PowerUpSlotBehavior : MonoBehaviour {
     [SerializeField] private Image totalTimerBar;
     [SerializeField] private Image currentTimerBar;
 
-    void Start() {
-        totalTime = powerUpObject.duration;
+    void Awake() {
         player = GameObject.Find("Player");
+    }
+
+    void Start() {
+        totalTime = powerUpObject.duration * powerUpObject.count;
+        timer = Time.deltaTime + totalTime;
+        
         icon.sprite = powerUpObject.sprite;
+
         powerUpObject.Activate(player);
 
-        timer = Time.deltaTime + totalTime;
-
-        powerUpCount = 1;
-        countText.text = $"x{powerUpCount}";
+        countText.text = $"x{powerUpObject.count}";
     }
 
     void Update() {
-        countText.text = $"x{powerUpCount}";
+        totalTime = powerUpObject.duration * powerUpObject.count;
+        countText.text = $"x{powerUpObject.count}";
         timer -= Time.deltaTime;
         currentTimerBar.fillAmount = timer / totalTime;
         if (timer <= 0f) {
             powerUpObject.Deactivate();
+            PowerUpManager.instance.Remove(powerUpObject);
             Destroy(gameObject);
         }
     }

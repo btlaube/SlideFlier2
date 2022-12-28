@@ -299,8 +299,7 @@ GameObject:
   - component: {fileID: 3190423204489672595}
   - component: {fileID: 666971641879108648}
   - component: {fileID: 3774348744914103967}
-  - component: {fileID: 2048353398}
-  - component: {fileID: 1286335461257198598}
+  - component: {fileID: 4713937239776359775}
   m_Layer: 0
   m_Name: Power Up Canvas
   m_TagString: Untagged
@@ -390,7 +389,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2048353398
+--- !u!114 &4713937239776359775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,19 +402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpsParent: {fileID: 2631966343103838389}
-  powerUpSlot: {fileID: 4444778390255293464, guid: bf86e00266878c947852954d0b3668bf, type: 3}
---- !u!114 &1286335461257198598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578886925981689365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4104c63d2b12c214b89d13c2aea50b3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2145816231194927470
 GameObject:
   m_ObjectHideFlags: 0

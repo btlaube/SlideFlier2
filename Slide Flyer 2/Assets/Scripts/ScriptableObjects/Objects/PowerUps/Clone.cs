@@ -15,7 +15,6 @@ public class Clone : PowerUpObject {
 
     public override void Deactivate() {
         //Remove clone
-        Debug.Log($"Deleted {clone}");
         Destroy(clone);
     }
 

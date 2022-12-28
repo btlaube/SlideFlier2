@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 6555778017109120612}
   - component: {fileID: 7900951504642705587}
   - component: {fileID: 696753678306200739}
-  - component: {fileID: 9211791954802631132}
+  - component: {fileID: -8430797148760485984}
   m_Layer: 0
   m_Name: PowerUpSlot
   m_TagString: Untagged
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &9211791954802631132
+--- !u!114 &-8430797148760485984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,7 +380,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpObject: {fileID: 0}
   icon: {fileID: 696753678306200739}
-  powerUpCount: 0
   countText: {fileID: 5339821102628403594}
   totalTime: 0
   timer: 0

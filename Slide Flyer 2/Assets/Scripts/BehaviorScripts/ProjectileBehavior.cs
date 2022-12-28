@@ -15,7 +15,7 @@ public class ProjectileBehavior : MonoBehaviour {
 
     void Start() {
         sr.sprite = projectileObject.sprite;
-        rb.velocity = transform.up * projectileObject.speed.value;
+        rb.velocity = transform.parent.up * projectileObject.speed.value;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
