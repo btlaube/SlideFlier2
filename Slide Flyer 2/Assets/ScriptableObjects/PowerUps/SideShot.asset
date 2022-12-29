@@ -15,5 +15,5 @@ MonoBehaviour:
   sprite: {fileID: -44584504, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
   speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
   duration: 10
-  count: 9
+  count: 1
   projectileOriginPrefab: {fileID: 8005425660608348138, guid: 7cfd0ab1643ea3741af359f5302bedc8, type: 3}

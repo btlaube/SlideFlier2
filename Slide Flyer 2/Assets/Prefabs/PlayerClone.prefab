@@ -106,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1133352995, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
+  m_Sprite: {fileID: -234101478, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,8 +129,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6620df033192bfe4db9e1fe8e8555475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileObject: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
-  projectile: {fileID: 4500509257675796607, guid: 0c30a28d0cb1b30429db9423d82c9797, type: 3}
-  currentAmmo: {fileID: 11400000, guid: e7b80b896b0c9f44b89c77f8846a6d00, type: 2}
-  maxAmmo: {fileID: 11400000, guid: f89249ab98e608b4e85ed24339cbd555, type: 2}
-  fireRate: 0.1
+  projectilePrefab: {fileID: 4500509257675796607, guid: 0c30a28d0cb1b30429db9423d82c9797, type: 3}
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}

@@ -30,7 +30,7 @@ public class CargoBehavior : MonoBehaviour {
             Die();
         }
         else {
-            sr.sprite = cargoObject.sprites[currentHealth-1];
+            sr.sprite = cargoObject.sprites[(int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length)];
         }
         
     }

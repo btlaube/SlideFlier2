@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class HealthDisplayScript : MonoBehaviour {
     
-    private Sprite[] sprites;
+    public Sprite[] sprites;
+
+    private SpriteRenderer sr;
+
+    void Awake() {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     void Update() {
         

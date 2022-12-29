@@ -22,7 +22,7 @@ public class PowerUpSlotBehavior : MonoBehaviour {
     }
 
     void Start() {
-        totalTime = powerUpObject.duration * powerUpObject.count;
+        totalTime = powerUpObject.duration;
         timer = Time.deltaTime + totalTime;
         
         icon.sprite = powerUpObject.sprite;

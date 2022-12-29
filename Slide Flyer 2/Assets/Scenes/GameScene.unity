@@ -371,8 +371,9 @@ GameObject:
   m_Component:
   - component: {fileID: 981992104}
   - component: {fileID: 981992103}
+  - component: {fileID: 981992105}
   m_Layer: 0
-  m_Name: PowerUpManager
+  m_Name: ScriptableObjectsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,6 +407,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981992105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981992102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbc71817477d614fa4022c1c4c78798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
 --- !u!1 &1001402833
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1784585590
 Transform:
   m_ObjectHideFlags: 0
@@ -648,7 +662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784585589}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6e80c16bda89ab49a47d478571d891c, type: 3}
   m_Name: 

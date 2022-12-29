@@ -32,19 +32,21 @@ public class PowerUpManager : MonoBehaviour {
         }
         else {
             powerUps.Add(powerUp);
-            powerUp.count++;
+            powerUp.count = 1;
+            if(onPowerUpChangedCallback != null)
+                onPowerUpChangedCallback.Invoke();
         }
 
-        if(onPowerUpChangedCallback != null)
-            onPowerUpChangedCallback.Invoke();
+        
+        
     }
 
     public void Remove(PowerUpObject powerUp) {
         powerUp.count = 0;
         powerUps.Remove(powerUp);
 
-        if(onPowerUpChangedCallback != null)
-            onPowerUpChangedCallback.Invoke();
+        //if(onPowerUpChangedCallback != null)
+        //    onPowerUpChangedCallback.Invoke();
     }
 
 }

@@ -10,4 +10,7 @@ public class PlayerStats : ScriptableObject {
     public PlayerScoreInt playerHighscore;
     public PlayerAmmoInt playerCurrentAmmo;
     public PlayerAmmoInt playerMaxAmmo;
+
+    public float fireRate;
+    public ProjectileObject equippedProjectile;
 }

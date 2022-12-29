@@ -4,37 +4,31 @@ using UnityEngine;
 
 public class PlayerFire : MonoBehaviour
 {
-    //TODO make setter method for equipped projectileObject
-    [SerializeField] private ProjectileObject projectileObject;
-    [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject projectilePrefab;
 
-    //[SerializeField] private int startingAmmo;
-    //[SerializeField] private int currentAmmo;
-    [SerializeField] private PlayerAmmoInt currentAmmo;
-    [SerializeField] private PlayerAmmoInt maxAmmo;
-    private Transform bulletOrigin;
+    [SerializeField] private PlayerStats playerStats;
+    private Transform projectileOrigin;
 
-    [SerializeField] private float fireRate = 0.5f;
     private float fireTimer = 0f;
 
     void Awake() {
-        bulletOrigin = transform.GetChild(0);
+        projectileOrigin = transform.GetChild(0);
     }
 
     void Start() {
         //playerAmmo.currentAmount
-        currentAmmo.value = maxAmmo.value;
+        playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
         fireTimer = Time.deltaTime;
     }
 
     void Update() {
         if (Input.touchCount > 1 ) {
             fireTimer += Time.deltaTime;
-            if (currentAmmo.value > 0 && fireTimer >= fireRate) {
+            if (playerStats.playerCurrentAmmo.value > 0 && fireTimer >= playerStats.fireRate) {
                 Shoot();
                 fireTimer = Time.deltaTime;
             }
-            else if (currentAmmo.value <= 0) {
+            else if (playerStats.playerCurrentAmmo.value <= 0) {
                 //Change this to an Event
                 //FindObjectOfType<GameManager>().EndGame();
             }
@@ -42,9 +36,9 @@ public class PlayerFire : MonoBehaviour
     }
 
     void Shoot() {
-        GameObject newProjectile = Instantiate(projectile, bulletOrigin.position, bulletOrigin.rotation, bulletOrigin);
-        newProjectile.GetComponent<ProjectileBehavior>().projectileObject = projectileObject;
-        currentAmmo.value--;
+        GameObject newProjectile = Instantiate(projectilePrefab, projectileOrigin.position, projectileOrigin.rotation, projectileOrigin);
+        newProjectile.GetComponent<ProjectileBehavior>().projectileObject = playerStats.equippedProjectile;
+        playerStats.playerCurrentAmmo.value--;
     }
 
 }

@@ -155,10 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileObject: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
-  projectile: {fileID: 4500509257675796607, guid: 0c30a28d0cb1b30429db9423d82c9797, type: 3}
-  currentAmmo: {fileID: 11400000, guid: e7b80b896b0c9f44b89c77f8846a6d00, type: 2}
-  maxAmmo: {fileID: 11400000, guid: f89249ab98e608b4e85ed24339cbd555, type: 2}
-  fireRate: 0.1
+  projectilePrefab: {fileID: 4500509257675796607, guid: 0c30a28d0cb1b30429db9423d82c9797, type: 3}
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
 --- !u!114 &1677546211
 MonoBehaviour:
   m_ObjectHideFlags: 0
