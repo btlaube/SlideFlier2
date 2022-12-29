@@ -21,8 +21,8 @@ public class PowerUpManager : MonoBehaviour {
     }
     #endregion
 
-    public delegate void OnPowerUpChanged();
-    public OnPowerUpChanged onPowerUpChangedCallback;
+    public delegate void OnAddPowerUp();
+    public OnAddPowerUp onAddedPowerUpCallback;
 
     public List<PowerUpObject> powerUps = new List<PowerUpObject>();
 
@@ -33,8 +33,8 @@ public class PowerUpManager : MonoBehaviour {
         else {
             powerUps.Add(powerUp);
             powerUp.count = 1;
-            if(onPowerUpChangedCallback != null)
-                onPowerUpChangedCallback.Invoke();
+            if(onAddedPowerUpCallback != null)
+                onAddedPowerUpCallback.Invoke();
         }
 
         
@@ -44,9 +44,6 @@ public class PowerUpManager : MonoBehaviour {
     public void Remove(PowerUpObject powerUp) {
         powerUp.count = 0;
         powerUps.Remove(powerUp);
-
-        //if(onPowerUpChangedCallback != null)
-        //    onPowerUpChangedCallback.Invoke();
     }
 
 }

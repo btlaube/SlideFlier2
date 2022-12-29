@@ -16,6 +16,7 @@ public class PowerUpSlotBehavior : MonoBehaviour {
     public float timer;
     [SerializeField] private Image totalTimerBar;
     [SerializeField] private Image currentTimerBar;
+    private int previousCount;
 
     void Awake() {
         player = GameObject.Find("Player");
@@ -30,9 +31,16 @@ public class PowerUpSlotBehavior : MonoBehaviour {
         powerUpObject.Activate(player);
 
         countText.text = $"x{powerUpObject.count}";
+        previousCount = powerUpObject.count;
     }
 
     void Update() {
+
+        if (previousCount != powerUpObject.count) {
+            timer += powerUpObject.duration;
+        }
+        previousCount = powerUpObject.count;
+
         totalTime = powerUpObject.duration * powerUpObject.count;
         countText.text = $"x{powerUpObject.count}";
         timer -= Time.deltaTime;

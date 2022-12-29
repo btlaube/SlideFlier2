@@ -13,7 +13,7 @@ public class PowerUpCanvasScript : MonoBehaviour {
 
     void Start() {
         powerUpManager = PowerUpManager.instance;
-        powerUpManager.onPowerUpChangedCallback += UpdateCanvas;
+        powerUpManager.onAddedPowerUpCallback += UpdateCanvas;
     }
 
     public void UpdateCanvas() {
@@ -21,8 +21,12 @@ public class PowerUpCanvasScript : MonoBehaviour {
 
         for (int i = 0; i < powerUpManager.powerUps.Count; i++) {
 
-            GameObject newPowerUpSlot = Instantiate(powerUpSlotPrefab, powerUpsParent.position, Quaternion.identity, powerUpsParent);
-            newPowerUpSlot.GetComponent<PowerUpSlotBehavior>().powerUpObject = powerUpManager.powerUps[i];
+            if (i+1 > slots.Length) {
+                GameObject newPowerUpSlot = Instantiate(powerUpSlotPrefab, powerUpsParent.position, Quaternion.identity, powerUpsParent);
+                newPowerUpSlot.GetComponent<PowerUpSlotBehavior>().powerUpObject = powerUpManager.powerUps[i];
+            }
+
+            
             /*
             if (slots.Length <= i) {
                 
