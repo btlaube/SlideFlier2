@@ -225,6 +225,10 @@ MonoBehaviour:
   powerUps:
   - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}
   - {fileID: 11400000, guid: a5f6b0e3bc882bb4aa876288c9f2ef66, type: 2}
+  - {fileID: 11400000, guid: 8d7f1093271edff4eb6067cce979c99f, type: 2}
+  - {fileID: 11400000, guid: 80712aa66c50bfa4daaeb636eb6fdb7e, type: 2}
+  - {fileID: 11400000, guid: 11adb6be97df55e468000e9347f6e632, type: 2}
+  - {fileID: 11400000, guid: db9520cf14334da46ae39529f19b1019, type: 2}
   cargoPrefab: {fileID: 5080674909731467013, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
   powerUpPrefab: {fileID: 8632818572297126456, guid: 0c15ff86ad1e5ba4b808f2155158f0f8, type: 3}
   spawnRate: 3

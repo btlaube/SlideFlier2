@@ -39,15 +39,42 @@ public class SpawnerScript : MonoBehaviour {
     }
 
     private void Spawn() {
-        foreach (Transform spawner in transform) {
-            bool spawnCargo = Random.value < 0.8;
 
-            if (spawnCargo) {
-                GameObject newCargo = Instantiate(cargoPrefab, spawner.position, Quaternion.identity, spawner);
-                newCargo.GetComponent<CargoBehavior>().cargoObject = cargos[Random.Range(0, cargos.Length)];
+        List<GameObject> spawnList = new List<GameObject>();
+
+        while (spawnList.Count < Random.Range(2, 6)) {
+            if (!spawnList.Contains(powerUpPrefab)) {
+                bool addPowerUp = Random.value > 0.7;
+
+                if (addPowerUp) {
+                    spawnList.Add(powerUpPrefab);
+                }
+                else {
+                    spawnList.Add(cargoPrefab);
+                }
             }
             else {
-                GameObject newPowerUp = Instantiate(powerUpPrefab, spawner.position, Quaternion.identity, spawner);
+                spawnList.Add(cargoPrefab);
+            }
+        }
+
+
+        List<Transform> spawnerListCopy = new List<Transform>(spawnerList);
+        List<Transform> randomizedSpawnerList = new List<Transform>();
+        int n = spawnerListCopy.Count;
+        for (int i = 0; i < n; i++) {
+            int rand = Random.Range(0, spawnerListCopy.Count);
+            randomizedSpawnerList.Add(spawnerListCopy[rand]);
+            spawnerListCopy.RemoveAt(rand);
+        }
+
+        for (int i = 0; i < spawnList.Count; i++) {
+            if (spawnList[i] == cargoPrefab) {
+                GameObject newCargo = Instantiate(cargoPrefab, randomizedSpawnerList[i].position, Quaternion.identity, randomizedSpawnerList[i]);
+                newCargo.GetComponent<CargoBehavior>().cargoObject = cargos[Random.Range(0, cargos.Length)];
+            }
+            else if (spawnList[i] == powerUpPrefab) {
+                GameObject newPowerUp = Instantiate(powerUpPrefab, randomizedSpawnerList[i].position, Quaternion.identity, randomizedSpawnerList[i]);
                 newPowerUp.GetComponent<PowerUpBehavior>().powerUpObject = powerUps[Random.Range(0, powerUps.Length)];
             }
         }
