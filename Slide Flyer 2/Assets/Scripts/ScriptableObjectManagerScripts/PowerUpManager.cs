@@ -29,6 +29,7 @@ public class PowerUpManager : MonoBehaviour {
     public void Add(PowerUpObject powerUp) {
         if (powerUps.Contains(powerUp)) {
             powerUp.count++;
+            powerUp.timer += powerUp.duration;
         }
         else {
             powerUps.Add(powerUp);

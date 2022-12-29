@@ -13,30 +13,12 @@ public class PowerUpCanvasScript : MonoBehaviour {
 
     void Start() {
         powerUpManager = PowerUpManager.instance;
-        powerUpManager.onAddedPowerUpCallback += UpdateCanvas;
+        powerUpManager.onAddedPowerUpCallback += AddPowerUpSlot;
     }
 
-    public void UpdateCanvas() {
-        PowerUpSlotBehavior[] slots = powerUpsParent.GetComponentsInChildren<PowerUpSlotBehavior>();
-
-        for (int i = 0; i < powerUpManager.powerUps.Count; i++) {
-
-            if (i+1 > slots.Length) {
-                GameObject newPowerUpSlot = Instantiate(powerUpSlotPrefab, powerUpsParent.position, Quaternion.identity, powerUpsParent);
-                newPowerUpSlot.GetComponent<PowerUpSlotBehavior>().powerUpObject = powerUpManager.powerUps[i];
-            }
-
-            
-            /*
-            if (slots.Length <= i) {
-                
-            }
-            else {
-                //slots[i].totalTime += powerUpManager.powerUps[i].duration;
-                slots[i].timer += powerUpManager.powerUps[i].duration;
-            }
-            */
-        }
+    public void AddPowerUpSlot() {
+        GameObject newPowerUpSlot = Instantiate(powerUpSlotPrefab, powerUpsParent.position, Quaternion.identity, powerUpsParent);
+        newPowerUpSlot.GetComponent<PowerUpSlotBehavior>().powerUpObject = powerUpManager.powerUps[powerUpManager.powerUps.Count-1];
     }
 
     

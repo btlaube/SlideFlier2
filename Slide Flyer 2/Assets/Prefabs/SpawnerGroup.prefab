@@ -223,14 +223,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a697250a1359f64297309b83bca4758, type: 2}
   - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
   powerUps:
-  - {fileID: 11400000, guid: d481a87b7e9f76c44ad19cf016c8ba97, type: 2}
   - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}
-  - {fileID: 11400000, guid: 8a84a1b4f79de2e4d957e3a3c746091d, type: 2}
-  - {fileID: 11400000, guid: 668d9c95103ad0846be1017e06cb7d8a, type: 2}
-  - {fileID: 11400000, guid: 2360a128edffd5b49bbc48d953192d1a, type: 2}
-  - {fileID: 11400000, guid: 142169717e4242f43b1a743b0979a65d, type: 2}
-  - {fileID: 11400000, guid: 1763b56bf4c97594bbbd68073747a1b1, type: 2}
-  - {fileID: 11400000, guid: c35996ea63f12ac46b88f92ec6b7f819, type: 2}
+  - {fileID: 11400000, guid: a5f6b0e3bc882bb4aa876288c9f2ef66, type: 2}
   cargoPrefab: {fileID: 5080674909731467013, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
   powerUpPrefab: {fileID: 8632818572297126456, guid: 0c15ff86ad1e5ba4b808f2155158f0f8, type: 3}
   spawnRate: 3

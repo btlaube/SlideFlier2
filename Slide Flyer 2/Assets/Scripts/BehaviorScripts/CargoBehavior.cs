@@ -12,6 +12,8 @@ public class CargoBehavior : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private int currentHealth;
+    private int previousSpriteIndex;
+    private int spriteIndex;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -25,12 +27,20 @@ public class CargoBehavior : MonoBehaviour {
     }
 
     public void TakeDamage(int damage) {
+
+        spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
+
+        if (previousSpriteIndex != spriteIndex) {
+            Debug.Log("Play Sound");
+        }
+        previousSpriteIndex = spriteIndex;
+
         currentHealth -= damage;
         if (currentHealth <= 0) {
             Die();
         }
         else {
-            sr.sprite = cargoObject.sprites[(int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length)];
+            sr.sprite = cargoObject.sprites[spriteIndex];
         }
         
     }
