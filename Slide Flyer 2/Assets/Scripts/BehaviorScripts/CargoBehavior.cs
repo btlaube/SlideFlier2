@@ -31,7 +31,7 @@ public class CargoBehavior : MonoBehaviour {
         spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
 
         if (previousSpriteIndex != spriteIndex) {
-            Debug.Log("Play Sound");
+            //Debug.Log("Play Sound");
         }
         previousSpriteIndex = spriteIndex;
 

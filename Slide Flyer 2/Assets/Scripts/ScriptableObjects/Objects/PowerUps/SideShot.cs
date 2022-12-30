@@ -11,9 +11,9 @@ public class SideShot : PowerUpObject {
 
     public override void Activate(GameObject target) {
         projectileOriginLeft = Instantiate(projectileOriginPrefab, new Vector2(target.transform.position.x - 0.5f, target.transform.position.y), Quaternion.identity, target.transform);
-        projectileOriginLeft.transform.Rotate(0f, 0f, 90f);
+        projectileOriginLeft.transform.eulerAngles += new Vector3 (0, 0, 90);
         projectileOriginRight = Instantiate(projectileOriginPrefab, new Vector2(target.transform.position.x + 0.5f, target.transform.position.y), Quaternion.identity, target.transform);
-        projectileOriginLeft.transform.Rotate(0f, 0f, -90f);
+        projectileOriginRight.transform.eulerAngles += new Vector3 (0, 0, -90);
     }
     
     public override void Deactivate() {

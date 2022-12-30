@@ -36,9 +36,13 @@ public class PlayerFire : MonoBehaviour
     }
 
     void Shoot() {
-        GameObject newProjectile = Instantiate(projectilePrefab, projectileOrigin.position, projectileOrigin.rotation, projectileOrigin);
-        newProjectile.GetComponent<ProjectileBehavior>().projectileObject = playerStats.equippedProjectile;
+
+        foreach(Transform projectileOrigin in transform) {
+            GameObject newProjectile = Instantiate(projectilePrefab, projectileOrigin.position, projectileOrigin.rotation, projectileOrigin);
+            newProjectile.GetComponent<ProjectileBehavior>().projectileObject = playerStats.equippedProjectile;
+        }
         playerStats.playerCurrentAmmo.value--;
+        
     }
 
 }
