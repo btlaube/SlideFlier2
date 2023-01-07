@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869fef40f72383244be3b764aa86a839, type: 3}
   m_Name: InfiniteAmmo
   m_EditorClassIdentifier: 
-  sprite: {fileID: 523521183, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
+  sprite: {fileID: -833393333, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
   speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
   duration: 10
   count: 0

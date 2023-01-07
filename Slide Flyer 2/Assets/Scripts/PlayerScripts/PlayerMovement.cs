@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    void Update() {
-        if (Input.touchCount > 0 ) {
+    [SerializeField] private Joystick joystick;
+    [SerializeField] private float movementSpeed;
+    private float horizontalMove = 0f;
+    private float verticalMove = 0f;
 
-            Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+    private Rigidbody2D rb;
 
-            if (touchPosition.y < -2.5) {
-
-                touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-                touchPosition.z = 0f;
-                touchPosition.y = -2.5f;
-                transform.position = touchPosition;
-            }            
-        }        
+    void Awake() {
+        rb = GetComponent<Rigidbody2D>();
     }
+
+    void Update() {
+
+        horizontalMove = joystick.Horizontal * movementSpeed;
+        verticalMove = joystick.Vertical * movementSpeed;
+
+    }
+
+    void FixedUpdate() {
+        rb.velocity = new Vector2(horizontalMove, verticalMove);
+    }
+
 }

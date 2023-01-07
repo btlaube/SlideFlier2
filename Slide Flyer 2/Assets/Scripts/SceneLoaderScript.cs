@@ -27,13 +27,13 @@ public class SceneLoaderScript : MonoBehaviour
     }
 
     IEnumerator LoadLevel(int levelIndex) {
-        //transition.SetTrigger("Start");
+        transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(levelIndex);
 
-        //transition.SetTrigger("End");
+        transition.SetTrigger("End");
     }
 
     public void Quit() {

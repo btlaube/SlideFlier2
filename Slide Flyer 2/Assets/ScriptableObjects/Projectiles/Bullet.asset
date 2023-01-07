@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {fileID: 11400000, guid: 1eb36268b9c73b7469d7a542c8b39dcf, type: 2}
   damage: {fileID: 11400000, guid: 3f7cbfe058de89b4fbd1204b18e73fad, type: 2}
-  sprite: {fileID: 1757429074, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
+  sprite: {fileID: 800638710, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
