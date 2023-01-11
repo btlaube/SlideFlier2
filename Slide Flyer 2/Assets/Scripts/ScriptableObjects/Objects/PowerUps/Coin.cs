@@ -10,6 +10,7 @@ public class Coin : PowerUpObject {
 
     public override void Activate(GameObject target) {
         playerStats.playerCoins.value += value;
+        SaveSystem.SavePlayer(playerStats);
     }
     
     public override void Deactivate() {

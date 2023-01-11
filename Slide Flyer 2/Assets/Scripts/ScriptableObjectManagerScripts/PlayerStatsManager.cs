@@ -8,11 +8,13 @@ public class PlayerStatsManager : MonoBehaviour {
 
     void Start() {
         playerStats.playerScore.value = 0;
+        Debug.Log("started");
     }
 
     void Update() {
         if (playerStats.playerScore.value > playerStats.playerHighscore.value) {
             playerStats.playerHighscore.value = playerStats.playerScore.value;
+            SaveSystem.SavePlayer(playerStats);
         }
     }
 

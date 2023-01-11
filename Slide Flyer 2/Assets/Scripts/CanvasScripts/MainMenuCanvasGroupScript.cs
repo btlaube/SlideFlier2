@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MainMenuCanvasGroupScript : MonoBehaviour {
 
+    public void LoadScene(int sceneToLoad) {
+        SceneLoaderScript.instance.LoadScene(sceneToLoad);
+    }
+
     public void OpenInfoCanvas() {
         transform.GetChild(4).gameObject.SetActive(true);
     }

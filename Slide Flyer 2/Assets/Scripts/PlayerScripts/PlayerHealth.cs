@@ -28,7 +28,6 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     private void Deactivate() {
-        //Game event end game
         Destroy(gameObject);
     }
 

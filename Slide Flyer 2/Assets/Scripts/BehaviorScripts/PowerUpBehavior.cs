@@ -10,13 +10,10 @@ public class PowerUpBehavior : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
-    //Add power up to display
-    [SerializeField] private PowerUpCanvasScript powerUpCanvas;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        powerUpCanvas = GameObject.Find("Power Up Canvas").GetComponent<PowerUpCanvasScript>();
     }
 
     void Start() {
@@ -25,9 +22,6 @@ public class PowerUpBehavior : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
-        //When this pick up object collides with the player
-            //Activate this pickup
-            //Delete this pick up
         if (hitInfo.tag == "Player") {
             //Add Power Up to power up manager
             PowerUpManager.instance.Add(powerUpObject);

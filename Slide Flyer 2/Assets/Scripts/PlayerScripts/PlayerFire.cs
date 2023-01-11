@@ -5,24 +5,23 @@ using UnityEngine;
 public class PlayerFire : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
-
     [SerializeField] private PlayerStats playerStats;
     private Transform projectileOrigin;
 
     private float fireTimer = 0f;
+    private bool fire = false;
 
     void Awake() {
         projectileOrigin = transform.GetChild(0);
     }
 
     void Start() {
-        //playerAmmo.currentAmount
         playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
         fireTimer = Time.deltaTime;
     }
 
     void Update() {
-        if (Input.touchCount > 1 ) {
+        if (fire) {
             fireTimer += Time.deltaTime;
             if (playerStats.playerCurrentAmmo.value > 0 && fireTimer >= playerStats.fireRate) {
                 Shoot();
@@ -35,14 +34,15 @@ public class PlayerFire : MonoBehaviour
         }
     }
 
-    void Shoot() {
+    public void CheckFire(bool fireBool) {
+        fire = fireBool;
+    }
 
+    void Shoot() {
         foreach(Transform projectileOrigin in transform) {
             GameObject newProjectile = Instantiate(projectilePrefab, projectileOrigin.position, projectileOrigin.rotation, projectileOrigin);
             newProjectile.GetComponent<ProjectileBehavior>().projectileObject = playerStats.equippedProjectile;
         }
         playerStats.playerCurrentAmmo.value--;
-        
     }
-
 }

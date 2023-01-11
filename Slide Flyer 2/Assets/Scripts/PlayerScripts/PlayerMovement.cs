@@ -1,29 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour {
-
-    [SerializeField] private Joystick joystick;
-    [SerializeField] private float movementSpeed;
-    private float horizontalMove = 0f;
-    private float verticalMove = 0f;
-
-    private Rigidbody2D rb;
-
-    void Awake() {
-        rb = GetComponent<Rigidbody2D>();
-    }
+    
+    private Vector2 startPos;
+    private bool fingerDown = false;
+    private Vector3 playerStartPos;
 
     void Update() {
+        if (fingerDown == false && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+            Touch touch = Input.GetTouch(0);
+            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            startPos = touchPosition;
+            fingerDown = true;
 
-        horizontalMove = joystick.Horizontal * movementSpeed;
-        verticalMove = joystick.Vertical * movementSpeed;
-
+            playerStartPos = transform.position;
+        }
     }
 
     void FixedUpdate() {
-        rb.velocity = new Vector2(horizontalMove, verticalMove);
-    }
+        if (fingerDown) {
+            Touch touch = Input.GetTouch(0);
+            Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
+            Vector3 distanceMoved = new Vector3(startPos.x - touchPosition.x, startPos.y - touchPosition.y, 0f);
+
+            transform.position = playerStartPos - (distanceMoved * 2);
+
+            if (Input.GetTouch(0).phase == TouchPhase.Ended) {
+                fingerDown = false;
+            }
+        }
+    }
 }
