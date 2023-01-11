@@ -43,5 +43,4 @@ public class GameController : MonoBehaviour {
             onLose.TriggerEvent();
         }
     }
-
 }

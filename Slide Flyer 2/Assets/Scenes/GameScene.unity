@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 103068277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.50011, z: 0}
-  m_LocalScale: {x: 0.854349, y: 0.854349, z: 0.854349}
+  m_LocalScale: {x: 0.8550282, y: 0.8550282, z: 0.8550282}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2189122562743530884}
@@ -249,6 +249,17 @@ Transform:
   m_Father: {fileID: 599342865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &217109543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8528206124899027353, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+  m_PrefabInstance: {fileID: 8528206124985848375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256cb0ba1e1c5d5488d62de35f651f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &558640107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -737,6 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4104c63d2b12c214b89d13c2aea50b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPowerUpAdded: {fileID: 11400000, guid: 6cdece2966a64f04299953a7e8369800, type: 2}
   powerUps: []
 --- !u!4 &981992104
 Transform:
@@ -1748,19 +1760,7 @@ MonoBehaviour:
   gameEvent: {fileID: 11400000, guid: d3dfa3ac1ac558f4bba323b61231fdc4, type: 2}
   onEventTriggered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 953765623998461452}
-        m_TargetAssemblyTypeName: CanvasGroupScript, Assembly-CSharp
-        m_MethodName: Lose
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!224 &953765625071080056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2202,6 +2202,7 @@ GameObject:
   - component: {fileID: 323691707951899537}
   - component: {fileID: 4133559984389296422}
   - component: {fileID: 5500918494282779366}
+  - component: {fileID: 5500918494282779367}
   m_Layer: 0
   m_Name: Power Up Canvas
   m_TagString: Untagged
@@ -3073,6 +3074,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpsParent: {fileID: 3006974883796879116}
   powerUpSlotPrefab: {fileID: 4444778390255293464, guid: bf86e00266878c947852954d0b3668bf, type: 3}
+  powerUpManager: {fileID: 981992103}
+--- !u!114 &5500918494282779367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789373274076305836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e247913ada476f649bde597777f81c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 6cdece2966a64f04299953a7e8369800, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5500918494282779366}
+        m_TargetAssemblyTypeName: PowerUpCanvasScript, Assembly-CSharp
+        m_MethodName: AddPowerUpSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &5509746612857073725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3459,6 +3489,18 @@ PrefabInstance:
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8550282
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8550282
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8550282
       objectReference: {fileID: 0}
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3926,6 +3968,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUp
+      value: 
+      objectReference: {fileID: 11400000, guid: a5f6b0e3bc882bb4aa876288c9f2ef66, type: 2}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 217109543}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Testing
+      objectReference: {fileID: 0}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
+      propertyPath: powerUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: PowerUpObject, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8528206124899027352, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
       propertyPath: m_RootOrder
       value: 3

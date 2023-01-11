@@ -8,7 +8,6 @@ public class PlayerStatsManager : MonoBehaviour {
 
     void Start() {
         playerStats.playerScore.value = 0;
-        Debug.Log("started");
     }
 
     void Update() {

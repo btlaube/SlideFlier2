@@ -4,25 +4,12 @@ using UnityEngine;
 
 public class PowerUpManager : MonoBehaviour {
     
-    #region Singleton
     public static PowerUpManager instance;
+    [SerializeField] private GameEvent onPowerUpAdded;
 
     void Awake() {
-
-        if (instance == null) {
-            instance = this;
-        }
-        else {
-            Destroy(gameObject);
-            return;
-        }
-        
-        DontDestroyOnLoad(gameObject);
+        instance = this;
     }
-    #endregion
-
-    public delegate void OnAddPowerUp();
-    public OnAddPowerUp onAddedPowerUpCallback;
 
     public List<PowerUpObject> powerUps = new List<PowerUpObject>();
 
@@ -34,12 +21,8 @@ public class PowerUpManager : MonoBehaviour {
         else {
             powerUps.Add(powerUp);
             powerUp.count = 1;
-            if(onAddedPowerUpCallback != null)
-                onAddedPowerUpCallback.Invoke();
+            onPowerUpAdded.TriggerEvent();
         }
-
-        
-        
     }
 
     public void Remove(PowerUpObject powerUp) {
