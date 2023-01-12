@@ -16,6 +16,7 @@ public class CanvasGroupScript : MonoBehaviour {
     public void Resume() {
         Time.timeScale = 1f;
         transform.GetChild(4).gameObject.SetActive(false);
+        transform.GetChild(5).gameObject.SetActive(false);
     }
 
     public void Lose() {

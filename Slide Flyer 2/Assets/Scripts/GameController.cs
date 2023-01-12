@@ -41,6 +41,7 @@ public class GameController : MonoBehaviour {
     void Update() {
         if (playerStats.playerCurrentHealth.value <= 0) {
             onLose.TriggerEvent();
+            playerStats.playerCurrentHealth.value = playerStats.playerMaxHealth.value;
         }
     }
 }
