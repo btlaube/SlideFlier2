@@ -51,6 +51,9 @@ public class CargoBehavior : MonoBehaviour {
             newPickUp.GetComponent<PickUpBehavior>().pickUpObject = cargoObject.drop;
         }
         playerStats.playerScore.value++;
+
+        Instantiate(cargoObject.breakEffect, transform.position, Quaternion.identity);
+
         Destroy(gameObject);
     }
 
@@ -58,7 +61,8 @@ public class CargoBehavior : MonoBehaviour {
         PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
         if (playerHealth != null) {
             playerHealth.TakeDamage(cargoObject.damage.value);
-            Destroy(gameObject);
+            Die();
+            //Destroy(gameObject);
         }
     }
 

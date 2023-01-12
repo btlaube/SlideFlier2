@@ -21,3 +21,4 @@ MonoBehaviour:
   - {fileID: -907779099, guid: be61061813e25a5479bac7e113eeb9f6, type: 3}
   health: 10
   drop: {fileID: 0}
+  breakEffect: {fileID: 8016574566517186685, guid: d3113eb93b96efc4db28bd7f35985e72, type: 3}

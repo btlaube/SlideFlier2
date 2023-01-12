@@ -9,4 +9,5 @@ public class CargoObject : ScriptableObject {
     public Sprite[] sprites;
     public int health;
     public PickUpObject drop;
+    public GameObject breakEffect;
 }
