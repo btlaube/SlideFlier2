@@ -10,6 +10,16 @@ public class PlayerMovement : MonoBehaviour {
     private bool fingerDown = false;
     private Vector3 playerStartPos;
 
+    //Testing
+    private Vector3 distanceMoved;
+    private float worldScreenHeight;
+    private float worldScreenWidth;
+
+    void Start() {
+        worldScreenHeight = Camera.main.orthographicSize * 2;
+        worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+    }
+
     void Update() {
         if (fingerDown == false && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
             Touch touch = Input.GetTouch(0);
@@ -31,23 +41,13 @@ public class PlayerMovement : MonoBehaviour {
 
             Vector3 distanceMoved = new Vector3(startPos.x - touchPosition.x, startPos.y - touchPosition.y, 0f);
 
-            //transform.position = playerStartPos - (distanceMoved * 2);
+            //Vector3 distanceMoved = new Vector3(Mathf.Clamp(startPos.x - touchPosition.x, (playerStartPos.x-(worldScreenWidth/2))/2, (playerStartPos.x+(worldScreenWidth/2))/2),
+            //                                    Mathf.Clamp(startPos.y - touchPosition.y, (playerStartPos.y-(worldScreenHeight/2))/2, (playerStartPos.y+(worldScreenHeight/2))/2),
+            //                                    0f);
 
-            //Vector3 nextPos = playerStartPos - (distanceMoved * 2);
-
-            //Debug.Log($"{touch.position} {touchPosition} ({Screen.width}, {Screen.height}) {Camera.main.WorldToScreenPoint(playerStartPos - (distanceMoved * 2))}");
-
-            //Testing screen boundaries
-            if (Camera.main.WorldToScreenPoint(playerStartPos - (distanceMoved * 2)).x < 0 || Camera.main.WorldToScreenPoint(playerStartPos - (distanceMoved * 2)).x > Screen.width) {
-                Debug.Log("out of bounds x");
-                distanceMoved.x = 0f;
-            }
-            else if (Camera.main.WorldToScreenPoint(playerStartPos - (distanceMoved * 2)).y < 0 || Camera.main.WorldToScreenPoint(playerStartPos - (distanceMoved * 2)).y > Screen.height){
-                Debug.Log("out of bounds y");
-                distanceMoved.y= 0f;
-            }
-
-            transform.position = playerStartPos - (distanceMoved * 2);
+            transform.position = new Vector3(Mathf.Clamp(playerStartPos.x - (distanceMoved.x * 2), -(worldScreenWidth/2), (worldScreenWidth/2)), 
+                                            Mathf.Clamp(playerStartPos.y - (distanceMoved.y * 2), -(worldScreenHeight/2), (worldScreenHeight/2)),
+                                            0f);
 
             if (Input.GetTouch(0).phase == TouchPhase.Ended) {
                 fingerDown = false;
