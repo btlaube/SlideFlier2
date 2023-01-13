@@ -14,9 +14,9 @@ public class SpawnerScript : MonoBehaviour {
     private float spawnTimer = 0f;
 
     //Spawn rate variables
-    [SerializeField] private float missleRate;
-    [SerializeField] private float pickUpRate;
-    [SerializeField] private int firstPickUpIndex;
+    //[SerializeField] private float missleRate;
+    //[SerializeField] private float pickUpRate;
+    //[SerializeField] private int firstPickUpIndex;
 
     [SerializeField] List<Transform> spawnerList;
 

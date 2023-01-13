@@ -146,6 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ca11cc43e82b44fbd98693b2bdb4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 11400000, guid: 4d5da68bd863ea94a86f112ab54e6251, type: 2}
-  playerAmmo: {fileID: 11400000, guid: e7b80b896b0c9f44b89c77f8846a6d00, type: 2}
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
   pickUpObject: {fileID: 0}

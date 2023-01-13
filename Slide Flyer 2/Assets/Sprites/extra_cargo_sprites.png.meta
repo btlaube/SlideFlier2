@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f816405bb0e413b48ac319d043b2d507
+guid: c36b81f05d9786546aebc73f8b9fbe3b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,96 +129,96 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_0
+      name: extra_cargo_sprites_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 167
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e920f845e62ccd4b97dbbce75f0089e
+      internalID: -2005690496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargo_break_effect_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 47
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b242f7ce1f1904fa5a06fbff690879
+      internalID: -1750044946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargo_break_effect_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 47
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777dee97cdb42a44394888b20d10a214
+      internalID: -926646840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargo_break_effect_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 29
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d702e26fcd3e44f87535bd3cd2a842
+      internalID: 727824635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cargo_break_effect_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
         width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80e17e64e69168d4da142008fc548557
-      internalID: -969826104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 163
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4889ab50661b1e843a9deb833d0593b4
-      internalID: -354541530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 178
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250601661af582e4688356d430676be6
-      internalID: 800638710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_3
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 177
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a86a37ae0b58c4e48bdfaf4f5da1a169
-      internalID: -2062279969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_4
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 178
-        width: 8
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -227,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05df860e03960604485dcd00f9217f37
-      internalID: -833393333
+      spriteID: 2bd3471662d1eec458bb8e0784d6b74e
+      internalID: -1500279635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_5
+      name: cargo_break_effect_5
       rect:
         serializedVersion: 2
-        x: 35
-        y: 163
-        width: 11
-        height: 11
+        x: 29
+        y: 12
+        width: 18
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,19 +248,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6298a1eb1cb61f4fb9186172fb57c8f
-      internalID: 1963122797
+      spriteID: e7010c2040df32a4c96973fc173372e1
+      internalID: -39604641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_6
+      name: cargo_break_effect_6
       rect:
         serializedVersion: 2
-        x: 66
-        y: 161
-        width: 19
+        x: 64
+        y: 8
+        width: 12
         height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -269,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 990d7d7c112141d4499cb0363273900d
-      internalID: -282031693
+      spriteID: 042c774a577a9564891dc050ec5a6a76
+      internalID: 1051349723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_7
+      name: extra_cargo_sprites_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 174
-        width: 15
-        height: 16
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bc679703a6cd6648947494855c77db9
-      internalID: -232493006
+      spriteID: 3ccbf176ee6228c4b9e558be281e5211
+      internalID: -188639596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_8
+      name: extra_cargo_sprites_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 161
+        y: 64
         width: 32
-        height: 23
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02ffb217fd2a78748bc4b58eca2dab0c
-      internalID: 823513414
+      spriteID: 709246d4d7466d54291187bf90ec46b1
+      internalID: -120132155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: powerUps_pickUps_sprites_9
+      name: extra_cargo_sprites_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 147
-        width: 8
-        height: 8
+        x: 128
+        y: 67
+        width: 32
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,71 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed33fa2ce11547b47aabf6a01dbad036
-      internalID: 1958729165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_10
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 141
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e4bd1016785c1c439116eba6cfb0d73
-      internalID: -199948141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_11
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 131
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 958197cdaa566054088198f15f5faf77
-      internalID: -964116494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: powerUps_pickUps_sprites_12
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 140
-        width: 11
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b0649e4c63f7e54ba6609ac2ee3e736
-      internalID: -1238172664
+      spriteID: c27e243bfe37d6a428a1f651b1545169
+      internalID: 663713962
       vertices: []
       indices: 
       edges: []
@@ -412,19 +349,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      powerUps_pickUps_sprites_1: -354541530
-      powerUps_pickUps_sprites_3: -2062279969
-      powerUps_pickUps_sprites_0: -969826104
-      powerUps_pickUps_sprites_7: -232493006
-      powerUps_pickUps_sprites_2: 800638710
-      powerUps_pickUps_sprites_5: 1963122797
-      powerUps_pickUps_sprites_8: 823513414
-      powerUps_pickUps_sprites_12: -1238172664
-      powerUps_pickUps_sprites_10: -199948141
-      powerUps_pickUps_sprites_11: -964116494
-      powerUps_pickUps_sprites_9: 1958729165
-      powerUps_pickUps_sprites_6: -282031693
-      powerUps_pickUps_sprites_4: -833393333
+      cargo_break_effect_5: -39604641
+      extra_cargo_sprites_0: -2005690496
+      cargo_break_effect_3: 727824635
+      cargo_break_effect_2: -926646840
+      cargo_break_effect_4: -1500279635
+      extra_cargo_sprites_2: -120132155
+      cargo_break_effect_6: 1051349723
+      cargo_break_effect_1: -1750044946
+      extra_cargo_sprites_1: -188639596
+      extra_cargo_sprites_3: 663713962
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

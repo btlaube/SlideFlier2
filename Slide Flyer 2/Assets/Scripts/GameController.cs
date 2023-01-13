@@ -43,5 +43,9 @@ public class GameController : MonoBehaviour {
             onLose.TriggerEvent();
             playerStats.playerCurrentHealth.value = playerStats.playerMaxHealth.value;
         }
+        if (playerStats.playerCurrentFuel.value <= 0) {
+            onLose.TriggerEvent();
+            playerStats.playerCurrentFuel.value = playerStats.playerMaxFuel.value;
+        }
     }
 }

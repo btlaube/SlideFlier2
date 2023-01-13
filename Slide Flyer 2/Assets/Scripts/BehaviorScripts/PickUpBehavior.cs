@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PickUpBehavior : MonoBehaviour {
 
-    [SerializeField] private PlayerHealthInt playerHealth;
-    [SerializeField] private PlayerAmmoInt playerAmmo;
+    [SerializeField] private PlayerStats playerStats;
 
     public PickUpObject pickUpObject;
     private Rigidbody2D rb;
@@ -27,7 +26,6 @@ public class PickUpBehavior : MonoBehaviour {
             //Activate this pickup
             //Delete this pick up
         if (hitInfo.tag == "Player") {
-            //Activate this pickup
             Ability();
             Destroy(gameObject);
         }
@@ -37,11 +35,18 @@ public class PickUpBehavior : MonoBehaviour {
         //TODO change hardcoded values
         switch(pickUpObject.ability) {
             case "Ammo":
-                playerAmmo.value += 20;
+                //playerStats.playerCurrentAmmo.value += 20;
+                playerStats.playerCurrentAmmo.value = Mathf.Clamp(playerStats.playerCurrentAmmo.value + 20, 0, playerStats.playerMaxAmmo.value);
                 break;
             case "Health":
-                playerHealth.value += 1;
+                //playerStats.playerCurrentHealth.value += 1;
+                playerStats.playerCurrentHealth.value = Mathf.Clamp(playerStats.playerCurrentHealth.value + 1, 0, playerStats.playerMaxHealth.value);
                 break;
+            case "Fuel":
+                //playerStats.playerCurrentFuel.value += 20;
+                playerStats.playerCurrentFuel.value = Mathf.Clamp(playerStats.playerCurrentFuel.value + 20, 0, playerStats.playerMaxFuel.value);
+                break;
+
         }
     }
 

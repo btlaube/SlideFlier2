@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-    [SerializeField] private PlayerHealthInt currentHealth;
-    [SerializeField] private PlayerHealthInt maxHealth;
-
+    [SerializeField] private PlayerStats playerStats;
     private bool dead;
-
-    void Start() {
-        currentHealth.value = maxHealth.value;
-    }
-
+    
     public void TakeDamage(int damage) {
-        currentHealth.value = Mathf.Clamp(currentHealth.value - damage, 0, maxHealth.value);
+        playerStats.playerCurrentHealth.value = Mathf.Clamp(playerStats.playerCurrentHealth.value - damage, 0, playerStats.playerMaxHealth.value);
 
-        if(currentHealth.value > 0) {
+        if(playerStats.playerCurrentHealth.value > 0) {
             //audioManager.Play("PlayerHit");
         }
         else {

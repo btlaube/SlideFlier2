@@ -11,6 +11,8 @@ public class PlayerStats : ScriptableObject {
     public PlayerAmmoInt playerCurrentAmmo;
     public PlayerAmmoInt playerMaxAmmo;
     public PlayerCoinsInt playerCoins;
+    public PlayerFuelFloat playerCurrentFuel;
+    public PlayerFuelFloat playerMaxFuel;
 
     public float fireRate;
     public ProjectileObject equippedProjectile;

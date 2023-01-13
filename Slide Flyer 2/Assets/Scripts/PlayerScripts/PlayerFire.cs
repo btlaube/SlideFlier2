@@ -6,17 +6,11 @@ public class PlayerFire : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private PlayerStats playerStats;
-    private Transform projectileOrigin;
 
     private float fireTimer = 0f;
     private bool fire = false;
 
-    void Awake() {
-        projectileOrigin = transform.GetChild(0);
-    }
-
     void Start() {
-        playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
         fireTimer = Time.deltaTime;
     }
 
