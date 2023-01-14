@@ -11,6 +11,9 @@ public class PickUpBehavior : MonoBehaviour {
     private SpriteRenderer sr;
     private int currentHealth;
 
+    private bool attracted;
+    private Transform attractedTarget;
+
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -21,11 +24,32 @@ public class PickUpBehavior : MonoBehaviour {
         rb.velocity = transform.up * -pickUpObject.speed.value;
     }
 
+    void FixedUpdate() {
+        if (attracted) {
+            MoveToward();
+        }
+    }
+
+    void MoveToward() {
+        Vector2 targetPosition = attractedTarget.transform.position;
+        Vector2 currentPosition = transform.position;
+        Vector3 directionOfTravel = targetPosition - currentPosition;
+
+        this.transform.Translate((directionOfTravel.x * (pickUpObject.speed.value*2) * Time.deltaTime),
+                (directionOfTravel.y * (pickUpObject.speed.value*2) * Time.deltaTime),
+                (directionOfTravel.z * (pickUpObject.speed.value*2) * Time.deltaTime),
+                Space.World);
+    }
+
     void OnTriggerEnter2D(Collider2D hitInfo) {
         //When this pick up object collides with the player
             //Activate this pickup
             //Delete this pick up
-        if (hitInfo.tag == "Player") {
+        if (hitInfo.tag == "PlayerAttrackArea") {
+            attracted = true;
+            attractedTarget = hitInfo.transform;
+        }
+        else if (hitInfo.tag == "PlayerCollectArea") {
             Ability();
             Destroy(gameObject);
         }

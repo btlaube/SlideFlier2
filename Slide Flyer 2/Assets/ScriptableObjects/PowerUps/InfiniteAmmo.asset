@@ -17,3 +17,4 @@ MonoBehaviour:
   duration: 10
   count: 0
   timer: 0
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}

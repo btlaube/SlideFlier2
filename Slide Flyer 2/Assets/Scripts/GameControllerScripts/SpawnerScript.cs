@@ -18,6 +18,7 @@ public class SpawnerScript : MonoBehaviour {
     //[SerializeField] private float missleRate;
     //[SerializeField] private float pickUpRate;
     //[SerializeField] private int firstPickUpIndex;
+    [SerializeField] private float powerUpSpawnRate;
     [SerializeField] private float minSpawnCount;
     [SerializeField] private float maxSpawnCount;
 
@@ -46,9 +47,11 @@ public class SpawnerScript : MonoBehaviour {
 
         List<GameObject> spawnList = new List<GameObject>();
 
+        bool addPowerUp = Random.value > powerUpSpawnRate;
+
         while (spawnList.Count < Random.Range(minSpawnCount, maxSpawnCount)) {
             if (!spawnList.Contains(powerUpPrefab)) {
-                bool addPowerUp = Random.value > 0.7;
+                //bool addPowerUp = Random.value > powerUpSpawnRate;
 
                 if (addPowerUp) {
                     spawnList.Add(powerUpPrefab);

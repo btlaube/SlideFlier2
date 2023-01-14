@@ -7,6 +7,7 @@ public class ProjectileBehavior : MonoBehaviour {
     public ProjectileObject projectileObject;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private int currentHealth;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -16,13 +17,26 @@ public class ProjectileBehavior : MonoBehaviour {
     void Start() {
         sr.sprite = projectileObject.sprite;
         rb.velocity = transform.parent.up * projectileObject.speed.value;
+        currentHealth = projectileObject.health;
+    }
+
+    public void TakeDamage(int damage) {
+        currentHealth -= damage;
+        if (currentHealth <= 0) {
+            Die();
+        }
+    }
+
+    void Die() {
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
         CargoBehavior cargo = hitInfo.GetComponent<CargoBehavior>();
         if (cargo != null) {
             cargo.TakeDamage(projectileObject.damage.value);
-            Destroy(gameObject);
+            TakeDamage(cargo.cargoObject.damage.value);
+            //
         }
     }
 

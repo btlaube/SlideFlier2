@@ -596,7 +596,7 @@ TextureImporter:
         serializedVersion: 2
         x: 224
         y: 128
-        width: 69
+        width: 106
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1043,8 +1043,8 @@ TextureImporter:
       UI_sprites_26: -1378342821
       UI_sprites_17: -132216000
       UI_sprites_5: -1875925860
-      UI_sprites_54: -1311825584
       UI_sprites_40: -1371965441
+      UI_sprites_54: -1311825584
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781

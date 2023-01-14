@@ -15,5 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 1963122797, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
   speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
   duration: 10
-  count: 3
-  timer: 20
+  count: 23
+  timer: 270
+  magnetRadius: 4
+  playerAttractArea: {fileID: 0}

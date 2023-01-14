@@ -17,8 +17,8 @@ public class CargoBehavior : MonoBehaviour {
     private int currentHealth;
     private int previousSpriteIndex;
     private int spriteIndex;
-    [SerializeField] private float low;
-    [SerializeField] private float high;
+    [SerializeField] private float lowPitch;
+    [SerializeField] private float highPitch;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -42,11 +42,11 @@ public class CargoBehavior : MonoBehaviour {
         spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
 
         if (previousSpriteIndex != spriteIndex) {
-            audioSource.RandomizePitch("Damage", low, high);
+            audioSource.RandomizePitch("Damage", lowPitch, highPitch);
             audioSource.Play("Damage");
         }
         else {
-            audioSource.RandomizePitch("Hit", low, high);
+            audioSource.RandomizePitch("Hit", lowPitch, highPitch);
             audioSource.Play("Hit");
         }
         previousSpriteIndex = spriteIndex;
@@ -58,12 +58,10 @@ public class CargoBehavior : MonoBehaviour {
         else {
             sr.sprite = cargoObject.sprites[spriteIndex];
         }
-        
     }
 
     void Die() {
-
-        audioSource.RandomizePitch("Break", low, high);
+        audioSource.RandomizePitch("Break", lowPitch, highPitch);
         audioSource.Play("Break");
 
         if (cargoObject.drop != null) {
@@ -80,8 +78,8 @@ public class CargoBehavior : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
-        PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
-        if (playerHealth != null) {
+        if (hitInfo.tag == "Player") {
+            PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(cargoObject.damage.value);
             Die();
         }

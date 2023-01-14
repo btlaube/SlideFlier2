@@ -152,8 +152,8 @@ MonoBehaviour:
   cargoObject: {fileID: 0}
   pickUpPrefab: {fileID: 7134526127030316289, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
-  low: 1
-  high: 2
+  lowPitch: 1
+  highPitch: 1.5
 --- !u!114 &4664460437291696839
 MonoBehaviour:
   m_ObjectHideFlags: 0

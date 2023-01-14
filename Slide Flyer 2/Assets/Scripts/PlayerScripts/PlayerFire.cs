@@ -37,6 +37,6 @@ public class PlayerFire : MonoBehaviour
             GameObject newProjectile = Instantiate(projectilePrefab, projectileOrigin.position, projectileOrigin.rotation, projectileOrigin);
             newProjectile.GetComponent<ProjectileBehavior>().projectileObject = playerStats.equippedProjectile;
         }
-        playerStats.playerCurrentAmmo.value--;
+        playerStats.playerCurrentAmmo.value -= playerStats.projectileCost;
     }
 }

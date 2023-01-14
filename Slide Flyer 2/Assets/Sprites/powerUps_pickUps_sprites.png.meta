@@ -389,7 +389,7 @@ TextureImporter:
         width: 11
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,6 +397,27 @@ TextureImporter:
       bones: []
       spriteID: 5b0649e4c63f7e54ba6609ac2ee3e736
       internalID: -1238172664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_bullet
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 156
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde53e11713db9247b6597ffc7b6fe6f
+      internalID: -301904997
       vertices: []
       indices: 
       edges: []
@@ -425,6 +446,7 @@ TextureImporter:
       powerUps_pickUps_sprites_9: 1958729165
       powerUps_pickUps_sprites_6: -282031693
       powerUps_pickUps_sprites_4: -833393333
+      big_bullet: -301904997
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

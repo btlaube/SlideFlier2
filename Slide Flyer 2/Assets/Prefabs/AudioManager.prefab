@@ -49,7 +49,7 @@ MonoBehaviour:
   sounds:
   - name: ButtonClick
     clip: {fileID: 8300000, guid: 13aca8f6577b90b4f84a4f28c1fa7f7f, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}

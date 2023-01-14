@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class MainMenuCanvasGroupScript : MonoBehaviour {
 
+    void Start() {
+        OpenOptionsCanvas();
+        CloseOptionsCanvas();
+    }
+
     public void LoadScene(int sceneToLoad) {
         SceneLoaderScript.instance.LoadScene(sceneToLoad);
     }

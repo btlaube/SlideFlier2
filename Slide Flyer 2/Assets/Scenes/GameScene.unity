@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 121571990}
   - component: {fileID: 121571989}
   - component: {fileID: 2710870846883148722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top Deleter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 599342865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Object Deleter Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
-  fuelDecrementRate: 1
 --- !u!114 &981992106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,6 +1130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyStats: {fileID: 11400000, guid: 160ed8d5b03a3e44399c576dfaa7fc2c, type: 2}
+  difficultyIncreaseRate: 45
 --- !u!1 &1024119149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,7 +4859,7 @@ GameObject:
   - component: {fileID: 1758518922017259972}
   - component: {fileID: 1758518922017259975}
   - component: {fileID: 4465724786281412832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom Deleter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5448,10 +5448,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 77a53ad6bd7209741b1d5a6381b6f809, type: 2}
   - {fileID: 11400000, guid: 6920a70a785faaa41a4fe792f90c6396, type: 2}
   - {fileID: 11400000, guid: dd4f29965c1654244984798cb3af7186, type: 2}
+  - {fileID: 11400000, guid: 80712aa66c50bfa4daaeb636eb6fdb7e, type: 2}
+  - {fileID: 11400000, guid: db9520cf14334da46ae39529f19b1019, type: 2}
+  - {fileID: 11400000, guid: 8d7f1093271edff4eb6067cce979c99f, type: 2}
   cargoPrefab: {fileID: 5080674909731467013, guid: 094efcdbc04c8a5469110369a756abf5, type: 3}
   powerUpPrefab: {fileID: 8632818572297126456, guid: 0c15ff86ad1e5ba4b808f2155158f0f8, type: 3}
   spawnRate: 3
   difficultyStats: {fileID: 11400000, guid: 160ed8d5b03a3e44399c576dfaa7fc2c, type: 2}
+  powerUpSpawnRate: 0.5
   minSpawnCount: 4
   maxSpawnCount: 6
   spawnerList: []
@@ -5928,6 +5932,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 138080679960320145, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303867834633054126, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955480333647478407, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285685860115223, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5976,8 +5996,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7151285686490709378, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+    - target: {fileID: 7151285686490709383, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709383, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783196743911541526, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
 --- !u!114 &7157434351742572415
 MonoBehaviour:

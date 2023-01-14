@@ -7,4 +7,5 @@ public class ProjectileObject : ScriptableObject {
     public SpawnableSpeed speed;
     public ProjectileDamage damage;
     public Sprite sprite;
+    public int health;
 }
