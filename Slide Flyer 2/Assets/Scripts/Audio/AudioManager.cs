@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour {
 
     public Sound[] sounds;
+    [SerializeField] private PreferencesData preferencesData;
 
     public static AudioManager instance;
 
@@ -25,7 +26,13 @@ public class AudioManager : MonoBehaviour {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
-            s.source.volume = s.volume;
+            if (s.isSoundEffect) {
+                s.source.volume = s.volume * preferencesData.soundEffectVolume.value;
+            }
+            else if (s.isMusic) {
+                s.source.volume = s.volume * preferencesData.musicVolume.value;
+            }
+            
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
@@ -43,5 +50,21 @@ public class AudioManager : MonoBehaviour {
         if (s == null)
             Debug.Log("No such audio clip");
         s.source.Stop();        
+    }
+
+    public void UpdateSoundEffectVolume() {
+        foreach (Sound s in sounds) {
+            if (s.isSoundEffect) {
+                s.source.volume = s.volume * preferencesData.soundEffectVolume.value;
+            }
+        }
+    }
+
+    public void UpdateMusicVolume() {
+        foreach (Sound s in sounds) {
+            if (s.isMusic) {
+                s.source.volume = s.volume * preferencesData.musicVolume.value;
+            }
+        }
     }
 }

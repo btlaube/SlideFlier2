@@ -32,4 +32,8 @@ public class CanvasGroupScript : MonoBehaviour {
         transform.GetChild(6).gameObject.SetActive(false);
     }
 
+    public void ButtonClick() {
+        AudioManager.instance.Play("ButtonClick");
+    }
+
 }

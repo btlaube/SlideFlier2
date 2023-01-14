@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewAudioManager : MonoBehaviour {
+public class ObjectAudioSource : MonoBehaviour {
 
     public Sound[] sounds;
     [SerializeField] private PreferencesData preferencesData;

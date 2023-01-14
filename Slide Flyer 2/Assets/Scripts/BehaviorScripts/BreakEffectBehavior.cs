@@ -18,7 +18,7 @@ public class BreakEffectBehavior : MonoBehaviour {
         rb.AddForce(forceDirection);
         rb.AddTorque(torque);
 
-        shrinkSpeed = Random.Range(1f, 3f);
+        shrinkSpeed = Random.Range(0.5f, 1.5f);
         Invoke("DestroySelf", shrinkSpeed);
     }
 

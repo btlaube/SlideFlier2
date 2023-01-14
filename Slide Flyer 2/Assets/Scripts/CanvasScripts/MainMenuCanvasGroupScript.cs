@@ -31,4 +31,8 @@ public class MainMenuCanvasGroupScript : MonoBehaviour {
     public void CloseOptionsCanvas() {
         transform.GetChild(5).gameObject.SetActive(false);
     }
+
+    public void ButtonClick() {
+        AudioManager.instance.Play("ButtonClick");
+    }
 }

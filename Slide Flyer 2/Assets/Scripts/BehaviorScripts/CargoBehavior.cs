@@ -12,7 +12,7 @@ public class CargoBehavior : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private BoxCollider2D bc;
-    private NewAudioManager audioManager;
+    private ObjectAudioSource audioSource;
 
     private int currentHealth;
     private int previousSpriteIndex;
@@ -24,7 +24,7 @@ public class CargoBehavior : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         bc = GetComponent<BoxCollider2D>();
-        audioManager = GetComponent<NewAudioManager>();
+        audioSource = GetComponent<ObjectAudioSource>();
     }
 
     void Start() {
@@ -38,12 +38,12 @@ public class CargoBehavior : MonoBehaviour {
         spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
 
         if (previousSpriteIndex != spriteIndex) {
-            audioManager.RandomizePitch("Damage", low, high);
-            audioManager.Play("Damage");
+            audioSource.RandomizePitch("Damage", low, high);
+            audioSource.Play("Damage");
         }
         else {
-            audioManager.RandomizePitch("Hit", low, high);
-            audioManager.Play("Hit");
+            audioSource.RandomizePitch("Hit", low, high);
+            audioSource.Play("Hit");
         }
         previousSpriteIndex = spriteIndex;
 
@@ -59,8 +59,8 @@ public class CargoBehavior : MonoBehaviour {
 
     void Die() {
 
-        audioManager.RandomizePitch("Break", low, high);
-        audioManager.Play("Break");
+        audioSource.RandomizePitch("Break", low, high);
+        audioSource.Play("Break");
 
         if (cargoObject.drop != null) {
             GameObject newPickUp = Instantiate(pickUpPrefab, transform.position, Quaternion.identity, transform.parent);
