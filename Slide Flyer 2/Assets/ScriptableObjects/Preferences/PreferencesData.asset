@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2400dd93fd043548aaa6b0af047f86c, type: 3}
-  m_Name: Fuel
+  m_Script: {fileID: 11500000, guid: 010fe076e9c3a11429dabc4d011582c2, type: 3}
+  m_Name: PreferencesData
   m_EditorClassIdentifier: 
-  speed: {fileID: 11400000, guid: d6adf9b6f55d626408e695ad9414dafb, type: 2}
-  sprite: {fileID: -1238172664, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
-  ability: Fuel
+  soundEffectVolume: {fileID: 11400000, guid: b2c832f5a601545419b343d3d47f8079, type: 2}
+  musicVolume: {fileID: 11400000, guid: 1c752f892984408489d50572447df005, type: 2}

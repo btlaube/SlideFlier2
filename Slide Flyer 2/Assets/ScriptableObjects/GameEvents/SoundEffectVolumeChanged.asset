@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f45be77fedc51a43a6f7fb590be22ee, type: 3}
-  m_Name: AudioVolumeManager
+  m_Script: {fileID: 11500000, guid: 76ed397dd51087b4ca8bf4f590d82f06, type: 3}
+  m_Name: SoundEffectVolumeChanged
   m_EditorClassIdentifier: 
-  soundEffectVolume: {fileID: 11400000, guid: b2c832f5a601545419b343d3d47f8079, type: 2}
-  musicVolume: {fileID: 11400000, guid: 1c752f892984408489d50572447df005, type: 2}

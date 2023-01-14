@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class NewAudioManager : MonoBehaviour {
 
     public Sound[] sounds;
-    [SerializeField] private AudioVolumeManager audioVolumeManager;
+    [SerializeField] private PreferencesData preferencesData;
 
     void Awake() {
         foreach (Sound s in sounds) {
@@ -14,10 +14,10 @@ public class NewAudioManager : MonoBehaviour {
             s.source.clip = s.clip;
 
             if (s.isSoundEffect) {
-                s.source.volume = s.volume * audioVolumeManager.soundEffectVolume.value;
+                s.source.volume = s.volume * preferencesData.soundEffectVolume.value;
             }
             else if (s.isMusic) {
-                s.source.volume = s.volume * audioVolumeManager.musicVolume.value;
+                s.source.volume = s.volume * preferencesData.musicVolume.value;
             }
             
             s.source.pitch = s.pitch;
@@ -38,6 +38,22 @@ public class NewAudioManager : MonoBehaviour {
             Debug.Log("No such audio clip");
         s.source.Stop();        
     }
+
+    public void UpdateSoundEffectVolume() {
+        foreach (Sound s in sounds) {
+            if (s.isSoundEffect) {
+                s.source.volume = s.volume * preferencesData.soundEffectVolume.value;
+            }
+        }
+    }
+
+    public void UpdateMusicVolume() {
+        foreach (Sound s in sounds) {
+            if (s.isMusic) {
+                s.source.volume = s.volume * preferencesData.musicVolume.value;
+            }
+        }
+    }    
 
     public void RandomizePitch(string name, float low, float high) {
         Sound s = Array.Find(sounds, sound => sound.name == name);

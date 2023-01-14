@@ -1,21 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OptionsCanvasScript : MonoBehaviour {
     
-    [SerializeField] private Toggle soundEffectToggle;
-    [SerializeField] private Toggle musicToggle;
-    [SerializeField] private AudioVolumeManager audioVolumeManager;
+    [SerializeField] private PreferencesData preferencesData;
+
+    [SerializeField] private Slider soundEffectVolumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+
+    [SerializeField] private GameEvent soundEffectVolumeChanged;
+    [SerializeField] private GameEvent musicVolumeChanged;
 
     void Start() {
-        UpdateVolumeSettings();
+        soundEffectVolumeSlider.value = preferencesData.soundEffectVolume.value;
+        musicVolumeSlider.value = preferencesData.musicVolume.value;
     }
 
-    public void UpdateVolumeSettings() {
-        audioVolumeManager.soundEffectVolume.value = soundEffectToggle.isOn ? 1f : 0f;
-        audioVolumeManager.musicVolume.value = musicToggle.isOn ? 1f : 0f;
+    public void OnSoundEffectVolumeChanged() {
+        preferencesData.soundEffectVolume.value = soundEffectVolumeSlider.value;
+        soundEffectVolumeChanged.TriggerEvent();
+    }
+
+    public void OnMusicVolumeChanged() {
+        musicVolumeChanged.TriggerEvent();
     }
 
 }

@@ -23,4 +23,13 @@ public class CanvasGroupScript : MonoBehaviour {
         Time.timeScale = 0f;
         transform.GetChild(5).gameObject.SetActive(true);
     }
+
+    public void ShowOptionsMenu() {
+        transform.GetChild(6).gameObject.SetActive(true);
+    }
+
+    public void CloseOptionsMenu() {
+        transform.GetChild(6).gameObject.SetActive(false);
+    }
+
 }
