@@ -23,7 +23,6 @@ public class PlayerStatsManager : MonoBehaviour {
 
     void FixedUpdate() {
         //Decrement Fuel independent of framerate
-        //playerStats.playerCurrentFuel.value -= Time.deltaTime * fuelDecrementRate;
         playerStats.playerCurrentFuel.value = Mathf.Clamp(playerStats.playerCurrentFuel.value - Time.deltaTime * fuelDecrementRate, 0, playerStats.playerMaxFuel.value);
     }
 

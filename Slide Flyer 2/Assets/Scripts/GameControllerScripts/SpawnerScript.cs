@@ -10,13 +10,16 @@ public class SpawnerScript : MonoBehaviour {
     [SerializeField] private GameObject cargoPrefab;
     [SerializeField] private GameObject powerUpPrefab;
 
-    [SerializeField] private float spawnRate = 2f;
+    [SerializeField] private float spawnRate;
+    [SerializeField] private DifficultyStats difficultyStats;
     private float spawnTimer = 0f;
 
     //Spawn rate variables
     //[SerializeField] private float missleRate;
     //[SerializeField] private float pickUpRate;
     //[SerializeField] private int firstPickUpIndex;
+    [SerializeField] private float minSpawnCount;
+    [SerializeField] private float maxSpawnCount;
 
     [SerializeField] List<Transform> spawnerList;
 
@@ -31,6 +34,7 @@ public class SpawnerScript : MonoBehaviour {
     }
 
     void Update() {
+        spawnRate = difficultyStats.cargoSpawnRate;
         spawnTimer += Time.deltaTime;
         if (spawnTimer >= spawnRate) {
             Spawn();
@@ -42,7 +46,7 @@ public class SpawnerScript : MonoBehaviour {
 
         List<GameObject> spawnList = new List<GameObject>();
 
-        while (spawnList.Count < Random.Range(2, 6)) {
+        while (spawnList.Count < Random.Range(minSpawnCount, maxSpawnCount)) {
             if (!spawnList.Contains(powerUpPrefab)) {
                 bool addPowerUp = Random.value > 0.7;
 
@@ -57,7 +61,6 @@ public class SpawnerScript : MonoBehaviour {
                 spawnList.Add(cargoPrefab);
             }
         }
-
 
         List<Transform> spawnerListCopy = new List<Transform>(spawnerList);
         List<Transform> randomizedSpawnerList = new List<Transform>();

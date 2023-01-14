@@ -33,6 +33,10 @@ public class CargoBehavior : MonoBehaviour {
         currentHealth = cargoObject.health;
     }
 
+    void Update() {
+        rb.velocity = transform.up * -cargoObject.speed.value;
+    }
+
     public void TakeDamage(int damage) {
 
         spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
