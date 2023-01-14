@@ -11,13 +11,20 @@ public class CargoBehavior : MonoBehaviour {
     [SerializeField] private PlayerStats playerStats;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private BoxCollider2D bc;
+    private NewAudioManager audioManager;
+
     private int currentHealth;
     private int previousSpriteIndex;
     private int spriteIndex;
+    [SerializeField] private float low;
+    [SerializeField] private float high;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
+        audioManager = GetComponent<NewAudioManager>();
     }
 
     void Start() {
@@ -31,7 +38,12 @@ public class CargoBehavior : MonoBehaviour {
         spriteIndex = (int)((cargoObject.health-currentHealth)/cargoObject.sprites.Length);
 
         if (previousSpriteIndex != spriteIndex) {
-            //Debug.Log("Play Sound");
+            audioManager.RandomizePitch("Damage", low, high);
+            audioManager.Play("Damage");
+        }
+        else {
+            audioManager.RandomizePitch("Hit", low, high);
+            audioManager.Play("Hit");
         }
         previousSpriteIndex = spriteIndex;
 
@@ -46,6 +58,10 @@ public class CargoBehavior : MonoBehaviour {
     }
 
     void Die() {
+
+        audioManager.RandomizePitch("Break", low, high);
+        audioManager.Play("Break");
+
         if (cargoObject.drop != null) {
             GameObject newPickUp = Instantiate(pickUpPrefab, transform.position, Quaternion.identity, transform.parent);
             newPickUp.GetComponent<PickUpBehavior>().pickUpObject = cargoObject.drop;
@@ -54,7 +70,9 @@ public class CargoBehavior : MonoBehaviour {
 
         Instantiate(cargoObject.breakEffect, transform.position, Quaternion.identity);
 
-        Destroy(gameObject);
+        sr.enabled = false;
+        bc.enabled = false;
+        Invoke("DestroySelf", 1f);
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
@@ -62,8 +80,11 @@ public class CargoBehavior : MonoBehaviour {
         if (playerHealth != null) {
             playerHealth.TakeDamage(cargoObject.damage.value);
             Die();
-            //Destroy(gameObject);
         }
+    }
+
+    void DestroySelf() {
+        Destroy(gameObject);
     }
 
 }

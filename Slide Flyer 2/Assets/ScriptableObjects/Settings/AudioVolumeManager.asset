@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0df5de7e93bc6244ca6d0b349707026e, type: 3}
-  m_Name: SpawnableSpeed
+  m_Script: {fileID: 11500000, guid: 7f45be77fedc51a43a6f7fb590be22ee, type: 3}
+  m_Name: AudioVolumeManager
   m_EditorClassIdentifier: 
-  value: 1
+  soundEffectVolume: {fileID: 11400000, guid: b2c832f5a601545419b343d3d47f8079, type: 2}
+  musicVolume: {fileID: 11400000, guid: 1c752f892984408489d50572447df005, type: 2}

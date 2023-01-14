@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3600317502815337457}
   - component: {fileID: 7232107064532616002}
   - component: {fileID: 1752387803204343039}
+  - component: {fileID: 4664460437291696839}
   m_Layer: 0
   m_Name: Cargo
   m_TagString: Untagged
@@ -149,3 +150,43 @@ MonoBehaviour:
   cargoObject: {fileID: 0}
   pickUpPrefab: {fileID: 7134526127030316289, guid: 77f858d4714c05c46bcc44434f3b0007, type: 3}
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
+  low: 1
+  high: 2
+--- !u!114 &4664460437291696839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080674909731467013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa398a95ac05f05479556ac5a00741dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Damage
+    clip: {fileID: 8300000, guid: 5bb7811b401e2a34cbf624c54572ddf4, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  - name: Break
+    clip: {fileID: 8300000, guid: d3f3cfe81a81071449284ce0dc225b1f, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  - name: Hit
+    clip: {fileID: 8300000, guid: 66a79bd80921e1846ba8340de51c45eb, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  audioVolumeManager: {fileID: 11400000, guid: a53ce9b7bf7870c4fbc4298578a252aa, type: 2}
