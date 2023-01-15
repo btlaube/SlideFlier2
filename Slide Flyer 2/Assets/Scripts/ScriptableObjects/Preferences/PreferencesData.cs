@@ -10,4 +10,5 @@ public class PreferencesData : ScriptableObject {
 
     //Controls data
     public int fireButtonLayout;
+    public int movementSensitivity;
 }

@@ -16,12 +16,18 @@ public class OptionsCanvasScript : MonoBehaviour {
 
     [SerializeField] private GameEvent fireButtonLayoutChanged;
 
+    [SerializeField] private Slider movementSensitivitySlider;
+
+    [SerializeField] private GameEvent movementSensitivityChanged;
+
     void Start() {
         soundEffectVolumeSlider.value = preferencesData.soundEffectVolume.value;
         musicVolumeSlider.value = preferencesData.musicVolume.value;
 
         fireButtonLeft.interactable = preferencesData.fireButtonLayout == 0;
         fireButtonRight.interactable = preferencesData.fireButtonLayout == 1;
+
+        movementSensitivitySlider.value = preferencesData.movementSensitivity;
     }
 
     public void OnSoundEffectVolumeChanged() {
@@ -30,6 +36,7 @@ public class OptionsCanvasScript : MonoBehaviour {
     }
 
     public void OnMusicVolumeChanged() {
+        preferencesData.musicVolume.value = musicVolumeSlider.value;
         musicVolumeChanged.TriggerEvent();
     }
 
@@ -51,6 +58,11 @@ public class OptionsCanvasScript : MonoBehaviour {
 
     public void OnFireButtonLayoutChanged() {
         fireButtonLayoutChanged.TriggerEvent();
+    }
+
+    public void OnMovementSensitivityChanged() {
+        preferencesData.movementSensitivity = (int)movementSensitivitySlider.value;
+        movementSensitivityChanged.TriggerEvent();
     }
 
 }

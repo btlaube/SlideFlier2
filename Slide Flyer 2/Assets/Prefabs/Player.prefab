@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908795624766237913}
   - component: {fileID: 4485798240473248626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CollectArea
   m_TagString: PlayerCollectArea
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5174268002493647963}
   - component: {fileID: 5955480333647478407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttractArea
   m_TagString: PlayerAttrackArea
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.79
+  m_Radius: 0.5
 --- !u!1 &7151285686490709383
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7151285686490709379}
   - component: {fileID: 1677546211}
   - component: {fileID: 1452664365}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f360b6c7bf37444b68ad21f7796fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preferencesData: {fileID: 11400000, guid: 9b7bf043a152e044e84b9a8843baf5e6, type: 2}
 --- !u!1001 &875532624378748157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +298,10 @@ PrefabInstance:
     - target: {fileID: 8005425660608348138, guid: 7cfd0ab1643ea3741af359f5302bedc8, type: 3}
       propertyPath: m_Name
       value: ProjectileOrigin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005425660608348138, guid: 7cfd0ab1643ea3741af359f5302bedc8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8005425660608348139, guid: 7cfd0ab1643ea3741af359f5302bedc8, type: 3}
       propertyPath: m_RootOrder

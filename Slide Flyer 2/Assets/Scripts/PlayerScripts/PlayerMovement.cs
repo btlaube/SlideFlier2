@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour {
     private float worldScreenWidth;
     private int movementTouchId;
 
+    [SerializeField] private PreferencesData preferencesData;
+
     void Start() {
         worldScreenHeight = Camera.main.orthographicSize * 2;
         worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
@@ -41,9 +43,10 @@ public class PlayerMovement : MonoBehaviour {
                 Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
                 Vector2 distanceMoved = touchPosition - startPos;
+                Vector3 previousPos = transform.position;
 
-                transform.position = new Vector3(Mathf.Clamp(playerStartPos.x + (distanceMoved.x * 2), -(worldScreenWidth/2), (worldScreenWidth/2)), 
-                                                Mathf.Clamp(playerStartPos.y + (distanceMoved.y * 2), -(worldScreenHeight/2), (worldScreenHeight/2)),
+                transform.position = new Vector3(Mathf.Clamp(playerStartPos.x + (distanceMoved.x * preferencesData.movementSensitivity), -(worldScreenWidth/2), (worldScreenWidth/2)), 
+                                                Mathf.Clamp(playerStartPos.y + (distanceMoved.y * preferencesData.movementSensitivity), -(worldScreenHeight/2), (worldScreenHeight/2)),
                                                 0f);
             }
         }
