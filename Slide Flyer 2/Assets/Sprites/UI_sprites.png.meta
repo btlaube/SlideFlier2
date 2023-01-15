@@ -1010,6 +1010,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: controls_left_on
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 63
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83f22adbf315ac4285d2fb0292e7c75
+      internalID: -935076608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_right_on
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 63
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68adb5a290e99141aa8c0f2882af0bb
+      internalID: 897664622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_left_off
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 23
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a86409d7f083841b324c8fcd09edf9
+      internalID: -1966463568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_right_off
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 23
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ddf729b29158a4493edbdc63c3ceb1
+      internalID: -717890229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1022,11 +1106,12 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       UI_sprites_16: 173688912
+      controls_left_on: -1384628208
+      controls_right_off: 650098928
       UI_sprites_52: 1589989569
       UI_sprites_19: 1044173474
       UI_sprites_15: -256976938
       UI_sprites_35: -287351588
-      UI_sprites_44: -1094396743
       UI_sprites_46: -801190880
       UI_sprites_10: -531248868
       UI_sprites_24: -1003990644
@@ -1035,16 +1120,16 @@ TextureImporter:
       UI_sprites_30: -1354509212
       UI_sprites_9: 996116873
       UI_sprites_8: -1644360869
-      UI_sprites_43: 875124858
       UI_sprites_38: 2006016805
       UI_sprites_7: 471368406
       UI_sprites_1: -1244314178
       UI_sprites_50: -1513443773
       UI_sprites_26: -1378342821
+      controls_right_on: 875124858
       UI_sprites_17: -132216000
-      UI_sprites_5: -1875925860
       UI_sprites_40: -1371965441
       UI_sprites_54: -1311825584
+      UI_sprites_5: -1875925860
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
@@ -1055,15 +1140,14 @@ TextureImporter:
       UI_sprites_41: 628009538
       UI_sprites_32: 1843644610
       UI_sprites_47: -1042133212
-      UI_sprites_45: 650098928
       UI_sprites_51: 1648722418
       UI_sprites_49: -213825528
       UI_sprites_29: 1928843526
       UI_sprites_33: -566922831
       UI_sprites_37: -928687693
       UI_sprites_23: -875200877
-      UI_sprites_11: 1437486715
       UI_sprites_48: 821507617
+      UI_sprites_11: 1437486715
       UI_sprites_31: 1826023045
       UI_sprites_21: 1677563336
       UI_sprites_25: -799372540
@@ -1072,7 +1156,7 @@ TextureImporter:
       UI_sprites_22: 1897767906
       UI_sprites_34: -1245572345
       UI_sprites_28: -1144692847
-      UI_sprites_42: -1384628208
+      controls_left_off: -1094396743
       UI_sprites_20: -713815290
       UI_sprites_39: 44654061
       UI_sprites_56: 1691656347

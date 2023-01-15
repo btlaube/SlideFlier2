@@ -9,4 +9,5 @@ public class PreferencesData : ScriptableObject {
     public AudioVolumeFloat musicVolume;
 
     //Controls data
+    public int fireButtonLayout;
 }
