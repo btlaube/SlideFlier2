@@ -31,6 +31,14 @@ public class PlayerMovement : MonoBehaviour {
 
                 playerStartPos = transform.position;
             }
+            if (Input.touchCount > 1) {
+                touch = Input.GetTouch(1);
+                Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                startPos = touchPosition;
+                fingerDown = true;
+
+                playerStartPos = transform.position;
+            }
         }
     }
 
