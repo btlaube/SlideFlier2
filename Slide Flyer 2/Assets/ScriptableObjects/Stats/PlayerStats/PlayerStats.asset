@@ -23,6 +23,6 @@ MonoBehaviour:
   playerMaxFuel: {fileID: 11400000, guid: b3b2177fc496ab047985336fc94122cd, type: 2}
   fuelDecrementRate: 5
   fireRate: 0.1
-  equippedProjectile: {fileID: 11400000, guid: 54c19425b384cc24e8de380ab8cb8a83, type: 2}
+  equippedProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   defaultProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   projectileCost: 1
