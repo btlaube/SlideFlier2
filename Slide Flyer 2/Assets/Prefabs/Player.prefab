@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: PlayerHit
-    clip: {fileID: 8300000, guid: 2be5d2288d799c345aef2779b65af905, type: 3}
+    clip: {fileID: 8300000, guid: b51cc735cdd3538438a4cfa642af3bc9, type: 3}
     volume: 1
     pitch: 1
     loop: 0

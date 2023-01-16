@@ -4574,9 +4574,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cargos:
   - {fileID: 11400000, guid: 44f34be02827e414fb017980c5628df6, type: 2}
+  - {fileID: 11400000, guid: 1749369c4cfb673439bf0a6a086e3165, type: 2}
   - {fileID: 11400000, guid: 5a697250a1359f64297309b83bca4758, type: 2}
   - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
-  - {fileID: 11400000, guid: 1749369c4cfb673439bf0a6a086e3165, type: 2}
+  - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
+  - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
+  - {fileID: 11400000, guid: 3685a1c875bbec346894046d23206457, type: 2}
   powerUps:
   - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}
   - {fileID: 11400000, guid: a5f6b0e3bc882bb4aa876288c9f2ef66, type: 2}
