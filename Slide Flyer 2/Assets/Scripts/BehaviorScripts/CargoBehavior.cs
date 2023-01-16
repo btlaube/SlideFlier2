@@ -79,9 +79,9 @@ public class CargoBehavior : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
         if (hitInfo.tag == "Player") {
+            Die();
             PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(cargoObject.damage.value);
-            Die();
         }
     }
 

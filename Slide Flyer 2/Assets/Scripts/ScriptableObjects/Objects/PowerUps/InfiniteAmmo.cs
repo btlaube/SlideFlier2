@@ -10,6 +10,7 @@ public class InfiniteAmmo : PowerUpObject {
 
     public override void Activate(GameObject target) {
         previousCost = playerStats.projectileCost;
+        playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
         playerStats.projectileCost = 0;
     }
 

@@ -137,7 +137,7 @@ TextureImporter:
         width: 234
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,7 +158,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 158
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,7 +200,7 @@ TextureImporter:
         width: 158
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,6 +208,48 @@ TextureImporter:
       bones: []
       spriteID: a742b4fbb6e77d84ea4f63b23ca2fb3f
       internalID: -625105684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_ui_elements_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 129
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03858de6eabd6cf4a98803203631eb17
+      internalID: 487093583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_ui_elements_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 129
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f22e818dbdeca9499323fedf70cbee7
+      internalID: -424763010
       vertices: []
       indices: 
       edges: []
@@ -224,6 +266,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       fill: -91787528
+      more_ui_elements_0: 487093583
+      more_ui_elements_1: -424763010
       handle: 1805175788
       background: -625105684
       border: -1371283678

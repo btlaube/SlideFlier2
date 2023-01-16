@@ -2779,11 +2779,11 @@ RectTransform:
   m_Father: {fileID: 1350752233}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: -100}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 197, y: -100}
   m_SizeDelta: {x: 235.857, y: 220.68}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &2078848304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,9 +3612,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -531248868, guid: 2e221d98805ab6d4f9fa6ceac0feeaf2, type: 3}
+  m_Sprite: {fileID: 487093583, guid: e93fde65147cebc4d94ff07976d3cec3, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3686,7 +3686,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3697,7 +3697,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: -424763010, guid: e93fde65147cebc4d94ff07976d3cec3, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -4583,9 +4583,6 @@ MonoBehaviour:
   powerUps:
   - {fileID: 11400000, guid: 1dc58382ad04a34428485591bff318cc, type: 2}
   - {fileID: 11400000, guid: a5f6b0e3bc882bb4aa876288c9f2ef66, type: 2}
-  - {fileID: 11400000, guid: 77a53ad6bd7209741b1d5a6381b6f809, type: 2}
-  - {fileID: 11400000, guid: 6920a70a785faaa41a4fe792f90c6396, type: 2}
-  - {fileID: 11400000, guid: dd4f29965c1654244984798cb3af7186, type: 2}
   - {fileID: 11400000, guid: 80712aa66c50bfa4daaeb636eb6fdb7e, type: 2}
   - {fileID: 11400000, guid: db9520cf14334da46ae39529f19b1019, type: 2}
   - {fileID: 11400000, guid: 8d7f1093271edff4eb6067cce979c99f, type: 2}
@@ -4915,7 +4912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6264330615166103717
 MonoBehaviour:
   m_ObjectHideFlags: 0
