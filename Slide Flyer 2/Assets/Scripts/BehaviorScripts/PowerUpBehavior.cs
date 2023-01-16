@@ -9,6 +9,8 @@ public class PowerUpBehavior : MonoBehaviour {
     [SerializeField] private PlayerStats playerStats;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private BoxCollider2D bc;
+    private ObjectAudioSource audioSource;
 
     private bool attracted;
     private Transform attractedTarget;
@@ -16,6 +18,8 @@ public class PowerUpBehavior : MonoBehaviour {
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<ObjectAudioSource>();
     }
 
     void Start() {
@@ -41,15 +45,23 @@ public class PowerUpBehavior : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo) {
-        if (hitInfo.tag == "PlayerAttrackArea") {
+        if (hitInfo.tag == "PlayerAttractArea") {
             attracted = true;
             attractedTarget = hitInfo.transform;
         }
         else if (hitInfo.tag == "PlayerCollectArea") {
+            audioSource.Play("Collect");
+
             //Add Power Up to power up manager
             PowerUpManager.instance.Add(powerUpObject);
-            Destroy(gameObject);
+
+            sr.enabled = false;
+            bc.enabled = false;
+            Invoke("DestroySelf", 1f);
         }
     }
 
+    void DestroySelf() {
+        Destroy(gameObject);
+    }
 }

@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 5955480333647478407}
   m_Layer: 6
   m_Name: AttractArea
-  m_TagString: PlayerAttrackArea
+  m_TagString: PlayerAttractArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 7151285686490709379}
   - component: {fileID: 1677546211}
   - component: {fileID: 1452664365}
+  - component: {fileID: 7682099321126563194}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -287,6 +288,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f360b6c7bf37444b68ad21f7796fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preferencesData: {fileID: 11400000, guid: 9b7bf043a152e044e84b9a8843baf5e6, type: 2}
+--- !u!114 &7682099321126563194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7151285686490709383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa398a95ac05f05479556ac5a00741dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: 2be5d2288d799c345aef2779b65af905, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
   preferencesData: {fileID: 11400000, guid: 9b7bf043a152e044e84b9a8843baf5e6, type: 2}
 --- !u!1001 &875532624378748157
 PrefabInstance:

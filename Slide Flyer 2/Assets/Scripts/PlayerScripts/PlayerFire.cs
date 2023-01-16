@@ -9,7 +9,7 @@ public class PlayerFire : MonoBehaviour
 
     private float fireTimer = 0f;
     private bool fire = false;
-
+    
     void Start() {
         fireTimer = Time.deltaTime;
     }
@@ -20,10 +20,6 @@ public class PlayerFire : MonoBehaviour
             if (playerStats.playerCurrentAmmo.value > 0 && fireTimer >= playerStats.fireRate) {
                 Shoot();
                 fireTimer = Time.deltaTime;
-            }
-            else if (playerStats.playerCurrentAmmo.value <= 0) {
-                //Change this to an Event
-                //FindObjectOfType<GameManager>().EndGame();
             }
         }
     }

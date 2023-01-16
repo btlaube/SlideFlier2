@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PickUpBehavior : MonoBehaviour {
 
-    [SerializeField] private PlayerStats playerStats;
-
     public PickUpObject pickUpObject;
+
+    [SerializeField] private PlayerStats playerStats;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private int currentHealth;
+    private BoxCollider2D bc;
+    private ObjectAudioSource audioSource;
 
     private bool attracted;
     private Transform attractedTarget;
@@ -17,6 +18,8 @@ public class PickUpBehavior : MonoBehaviour {
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<ObjectAudioSource>();
     }
 
     void Start() {
@@ -45,13 +48,17 @@ public class PickUpBehavior : MonoBehaviour {
         //When this pick up object collides with the player
             //Activate this pickup
             //Delete this pick up
-        if (hitInfo.tag == "PlayerAttrackArea") {
+        if (hitInfo.tag == "PlayerAttractArea") {
             attracted = true;
             attractedTarget = hitInfo.transform;
         }
         else if (hitInfo.tag == "PlayerCollectArea") {
+            audioSource.Play(pickUpObject.pickUpSound);
+            
             Ability();
-            Destroy(gameObject);
+            sr.enabled = false;
+            bc.enabled = false;
+            Invoke("DestroySelf", 1f);
         }
     }
 
@@ -59,19 +66,19 @@ public class PickUpBehavior : MonoBehaviour {
         //TODO change hardcoded values
         switch(pickUpObject.ability) {
             case "Ammo":
-                //playerStats.playerCurrentAmmo.value += 20;
                 playerStats.playerCurrentAmmo.value = Mathf.Clamp(playerStats.playerCurrentAmmo.value + 20, 0, playerStats.playerMaxAmmo.value);
                 break;
             case "Health":
-                //playerStats.playerCurrentHealth.value += 1;
                 playerStats.playerCurrentHealth.value = Mathf.Clamp(playerStats.playerCurrentHealth.value + 1, 0, playerStats.playerMaxHealth.value);
                 break;
             case "Fuel":
-                //playerStats.playerCurrentFuel.value += 20;
                 playerStats.playerCurrentFuel.value = Mathf.Clamp(playerStats.playerCurrentFuel.value + 20, 0, playerStats.playerMaxFuel.value);
                 break;
 
         }
     }
 
+    void DestroySelf() {
+        Destroy(gameObject);
+    }
 }

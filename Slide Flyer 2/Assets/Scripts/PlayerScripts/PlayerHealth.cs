@@ -6,12 +6,17 @@ public class PlayerHealth : MonoBehaviour {
 
     [SerializeField] private PlayerStats playerStats;
     private bool dead;
+    private ObjectAudioSource audioSource;
     
+    void Awake() {
+        audioSource = GetComponent<ObjectAudioSource>();
+    }
+
     public void TakeDamage(int damage) {
         playerStats.playerCurrentHealth.value = Mathf.Clamp(playerStats.playerCurrentHealth.value - damage, 0, playerStats.playerMaxHealth.value);
 
         if(playerStats.playerCurrentHealth.value > 0) {
-            //audioManager.Play("PlayerHit");
+            audioSource.Play("PlayerHit");
         }
         else {
             if(!dead) {

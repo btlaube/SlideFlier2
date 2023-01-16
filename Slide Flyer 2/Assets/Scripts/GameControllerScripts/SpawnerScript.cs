@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour {
     
-    [SerializeField] private CargoObject[] cargos;
+    [SerializeField] private CargoObject emptyCargo;
+    [SerializeField] private CargoObject[] pickUpCargos;
     [SerializeField] private PowerUpObject[] powerUps;
 
     [SerializeField] private GameObject cargoPrefab;
@@ -74,10 +75,18 @@ public class SpawnerScript : MonoBehaviour {
             spawnerListCopy.RemoveAt(rand);
         }
 
+        int pickUpCargoIndex = Random.Range(0, spawnList.Count);
+
         for (int i = 0; i < spawnList.Count; i++) {
             if (spawnList[i] == cargoPrefab) {
                 GameObject newCargo = Instantiate(cargoPrefab, randomizedSpawnerList[i].position, Quaternion.identity, randomizedSpawnerList[i]);
-                newCargo.GetComponent<CargoBehavior>().cargoObject = cargos[Random.Range(0, cargos.Length)];
+                //newCargo.GetComponent<CargoBehavior>().cargoObject = cargos[Random.Range(0, cargos.Length)];
+                if (i == pickUpCargoIndex) {
+                    newCargo.GetComponent<CargoBehavior>().cargoObject = pickUpCargos[Random.Range(0, pickUpCargos.Length)];
+                }
+                else {
+                    newCargo.GetComponent<CargoBehavior>().cargoObject = emptyCargo
+                }
             }
             else if (spawnList[i] == powerUpPrefab) {
                 GameObject newPowerUp = Instantiate(powerUpPrefab, randomizedSpawnerList[i].position, Quaternion.identity, randomizedSpawnerList[i]);

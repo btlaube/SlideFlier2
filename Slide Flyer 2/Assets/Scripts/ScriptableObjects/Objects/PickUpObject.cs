@@ -6,6 +6,6 @@ using UnityEngine;
 public class PickUpObject : ScriptableObject {
     public SpawnableSpeed speed;
     public Sprite sprite;
-    //change from string
     public string ability;
+    public string pickUpSound;
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 52114206934111948}
   - component: {fileID: 6130062266385411711}
   - component: {fileID: 1276279506826278991}
+  - component: {fileID: 2684806168087636934}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -148,5 +149,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpObject: {fileID: 0}
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
-  powerUpsParent: {fileID: 6555778017109120612, guid: bf86e00266878c947852954d0b3668bf, type: 3}
-  powerUpSlot: {fileID: 4444778390255293464, guid: bf86e00266878c947852954d0b3668bf, type: 3}
+--- !u!114 &2684806168087636934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632818572297126456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa398a95ac05f05479556ac5a00741dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Collect
+    clip: {fileID: 8300000, guid: 2be5d2288d799c345aef2779b65af905, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  preferencesData: {fileID: 11400000, guid: 9b7bf043a152e044e84b9a8843baf5e6, type: 2}

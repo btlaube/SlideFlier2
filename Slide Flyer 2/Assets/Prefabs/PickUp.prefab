@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1474408734712658421}
   - component: {fileID: 4746046691271328070}
   - component: {fileID: 1784914466066624284}
+  - component: {fileID: 3053677708524497900}
   m_Layer: 0
   m_Name: PickUp
   m_TagString: Untagged
@@ -146,5 +147,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ca11cc43e82b44fbd98693b2bdb4e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
   pickUpObject: {fileID: 0}
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
+--- !u!114 &3053677708524497900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134526127030316289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa398a95ac05f05479556ac5a00741dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Ammo
+    clip: {fileID: 8300000, guid: 817655d2d90e0094dbee9f084326137f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  - name: Fuel
+    clip: {fileID: 8300000, guid: a8e1ced52bf4b854aaddd00cd0371b90, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  - name: SpareParts
+    clip: {fileID: 8300000, guid: 4a2db2934720d8e4fa42f104a48c1101, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    isSoundEffect: 1
+    isMusic: 0
+  preferencesData: {fileID: 11400000, guid: 9b7bf043a152e044e84b9a8843baf5e6, type: 2}

@@ -15,3 +15,4 @@ MonoBehaviour:
   speed: {fileID: 11400000, guid: d6adf9b6f55d626408e695ad9414dafb, type: 2}
   sprite: {fileID: -1238172664, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
   ability: Fuel
+  pickUpSound: Fuel
