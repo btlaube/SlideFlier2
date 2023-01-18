@@ -6361,6 +6361,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CargoBehavior_OnTriggerEnter2D_m1F8FE718
 		}
 	}
 	{
+		// Die();
+		CargoBehavior_Die_mE3F6B5D7326D31B4784AB0EED479BFCBAAB57EA8(__this, NULL);
 		// PlayerHealth playerHealth = hitInfo.GetComponent<PlayerHealth>();
 		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_3 = ___hitInfo0;
 		NullCheck(L_3);
@@ -6374,8 +6376,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CargoBehavior_OnTriggerEnter2D_m1F8FE718
 		int32_t L_7 = L_6->___value_4;
 		NullCheck(L_4);
 		PlayerHealth_TakeDamage_mB6C8B2F391600A980FC91EE61150A4C862E94071(L_4, L_7, NULL);
-		// Die();
-		CargoBehavior_Die_mE3F6B5D7326D31B4784AB0EED479BFCBAAB57EA8(__this, NULL);
 	}
 
 IL_0033:
@@ -12116,10 +12116,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfiniteAmmo_Activate_m9711D4881F9E32346
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___projectileCost_17;
 		__this->___previousCost_10 = L_1;
-		// playerStats.projectileCost = 0;
+		// playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
 		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_2 = __this->___playerStats_9;
 		NullCheck(L_2);
-		L_2->___projectileCost_17 = 0;
+		PlayerAmmoInt_t8C8145DA43DE781ED1FC404F32AE7BB413786C79* L_3 = L_2->___playerCurrentAmmo_8;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_4 = __this->___playerStats_9;
+		NullCheck(L_4);
+		PlayerAmmoInt_t8C8145DA43DE781ED1FC404F32AE7BB413786C79* L_5 = L_4->___playerMaxAmmo_9;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___value_4;
+		NullCheck(L_3);
+		L_3->___value_4 = L_6;
+		// playerStats.projectileCost = 0;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_7 = __this->___playerStats_9;
+		NullCheck(L_7);
+		L_7->___projectileCost_17 = 0;
 		// }
 		return;
 	}
