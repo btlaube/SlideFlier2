@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1702362685703301969}
   - component: {fileID: 3441180879088862638}
   - component: {fileID: 5173133413297869879}
+  - component: {fileID: 1393708298}
+  - component: {fileID: 1393708297}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -71,6 +73,18 @@ MonoBehaviour:
       - m_Target: {fileID: 8528206124899027353}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1393708297}
+        m_TargetAssemblyTypeName: InterstitialAds, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -205,3 +219,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1393708298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528206124899027354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f2b7c88af605f14e9b0af354c0c0e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 5126723
+  _iOSGameId: 
+  _testMode: 0
+  interstitialAds: {fileID: 1393708297}
+--- !u!114 &1393708297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528206124899027354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6e241ab5b18e746a79c17e9a6945f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS

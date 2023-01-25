@@ -262,7 +262,7 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -760,7 +760,7 @@ PlayerSettings:
     Game Performance: 0
     Purchasing: 0
     UDP: 0
-    Unity Ads: 0
+    Unity Ads: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -775,11 +775,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: d627761c-a14e-44c8-b431-2fb6ce49ff2f
+  cloudProjectId: a4b7e4a7-a905-4f16-8a65-bafe83c8f099
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Slide Flier 2
-  organizationId: btlaube
+  organizationId: bifrost-games
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
