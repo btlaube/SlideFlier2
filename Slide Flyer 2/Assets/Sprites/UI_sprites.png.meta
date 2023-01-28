@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_sprites_12
+      name: ad_icon
       rect:
         serializedVersion: 2
         x: 284
@@ -570,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_sprites_21
+      name: home
       rect:
         serializedVersion: 2
         x: 208
@@ -1019,7 +1019,7 @@ TextureImporter:
         width: 34
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,7 +1040,7 @@ TextureImporter:
         width: 34
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1061,7 +1061,7 @@ TextureImporter:
         width: 34
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,7 +1082,7 @@ TextureImporter:
         width: 34
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1090,6 +1090,153 @@ TextureImporter:
       bones: []
       spriteID: a9ddf729b29158a4493edbdc63c3ceb1
       internalID: -717890229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_home
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 324
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa49762051c3b974d9fbacf15010b946
+      internalID: 45155970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_options
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 324
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d5d89a38f12da40887d762a0e10174
+      internalID: -882681497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_sprites_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 197
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72a1b12acd9d084db674ef5f4854eea
+      internalID: -338959058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_sprites_44
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 182
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210fca421a8e96941b5a34bf72ab9c9d
+      internalID: 1560950209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_sprites_45
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 182
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ae571965622b84caee5ac25c5cdd2c
+      internalID: -934651118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_sprites_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 182
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b933ababa7703c441a3052d8e135ea41
+      internalID: -801190880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new_button
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 253
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 5, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a7086c65a419547a66ea814519639a
+      internalID: -235975274
       vertices: []
       indices: 
       edges: []
@@ -1113,6 +1260,7 @@ TextureImporter:
       UI_sprites_15: -256976938
       UI_sprites_35: -287351588
       UI_sprites_46: -801190880
+      UI_sprites_44: 1560950209
       UI_sprites_10: -531248868
       UI_sprites_24: -1003990644
       UI_sprites_0: -274638258
@@ -1120,7 +1268,9 @@ TextureImporter:
       UI_sprites_30: -1354509212
       UI_sprites_9: 996116873
       UI_sprites_8: -1644360869
+      UI_sprites_43: -338959058
       UI_sprites_38: 2006016805
+      new_home: 45155970
       UI_sprites_7: 471368406
       UI_sprites_1: -1244314178
       UI_sprites_50: -1513443773
@@ -1134,29 +1284,32 @@ TextureImporter:
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
       UI_sprites_3: -1241414622
-      UI_sprites_12: -961537211
       UI_sprites_36: -1609463636
       UI_sprites_18: -512398359
       UI_sprites_41: 628009538
       UI_sprites_32: 1843644610
       UI_sprites_47: -1042133212
       UI_sprites_51: 1648722418
+      UI_sprites_45: -934651118
       UI_sprites_49: -213825528
+      ad_icon: -961537211
       UI_sprites_29: 1928843526
       UI_sprites_33: -566922831
       UI_sprites_37: -928687693
+      home: 1677563336
       UI_sprites_23: -875200877
       UI_sprites_48: 821507617
       UI_sprites_11: 1437486715
       UI_sprites_31: 1826023045
-      UI_sprites_21: 1677563336
       UI_sprites_25: -799372540
       UI_sprites_53: -1898809197
       UI_sprites_13: 1104298903
       UI_sprites_22: 1897767906
       UI_sprites_34: -1245572345
       UI_sprites_28: -1144692847
+      new_options: -882681497
       controls_left_off: -1094396743
+      new_button: -235975274
       UI_sprites_20: -713815290
       UI_sprites_39: 44654061
       UI_sprites_56: 1691656347
