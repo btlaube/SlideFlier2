@@ -930,7 +930,7 @@ TextureImporter:
       name: UI_sprites_38
       rect:
         serializedVersion: 2
-        x: 46
+        x: 43
         y: 21
         width: 97
         height: 42
@@ -993,7 +993,7 @@ TextureImporter:
       name: UI_sprites_41
       rect:
         serializedVersion: 2
-        x: 64
+        x: 61
         y: 12
         width: 79
         height: 7
@@ -1241,6 +1241,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: new_pause
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 300
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7101435e6340a4c942f8c9fdc3def8
+      internalID: 479767785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1277,9 +1298,9 @@ TextureImporter:
       UI_sprites_26: -1378342821
       controls_right_on: 875124858
       UI_sprites_17: -132216000
-      UI_sprites_40: -1371965441
-      UI_sprites_54: -1311825584
       UI_sprites_5: -1875925860
+      UI_sprites_54: -1311825584
+      UI_sprites_40: -1371965441
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
@@ -1293,6 +1314,7 @@ TextureImporter:
       UI_sprites_45: -934651118
       UI_sprites_49: -213825528
       ad_icon: -961537211
+      new_pause: 479767785
       UI_sprites_29: 1928843526
       UI_sprites_33: -566922831
       UI_sprites_37: -928687693

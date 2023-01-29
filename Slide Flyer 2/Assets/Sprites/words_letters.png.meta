@@ -263,6 +263,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: paused
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 52
+        width: 181
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc7620269c17a44f935df3b8f800ad1
+      internalID: -1035216248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -278,6 +299,7 @@ TextureImporter:
       crashed: -912826780
       words_letters_7: -33185251
       words_letters_5: 1473607078
+      paused: -1035216248
       words_letters_2: 1863868785
       home: -1692418910
       shop: -510467895
