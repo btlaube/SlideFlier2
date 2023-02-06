@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_sprites_17
+      name: panel
       rect:
         serializedVersion: 2
         x: 96
@@ -1250,7 +1250,7 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1297,10 +1297,9 @@ TextureImporter:
       UI_sprites_50: -1513443773
       UI_sprites_26: -1378342821
       controls_right_on: 875124858
-      UI_sprites_17: -132216000
       UI_sprites_5: -1875925860
-      UI_sprites_54: -1311825584
       UI_sprites_40: -1371965441
+      UI_sprites_54: -1311825584
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
@@ -1313,6 +1312,7 @@ TextureImporter:
       UI_sprites_51: 1648722418
       UI_sprites_45: -934651118
       UI_sprites_49: -213825528
+      panel: -132216000
       ad_icon: -961537211
       new_pause: 479767785
       UI_sprites_29: 1928843526

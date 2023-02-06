@@ -26,3 +26,6 @@ MonoBehaviour:
   equippedProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   defaultProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   projectileCost: 1
+  playerEquippedSprite: 10
+  unlockedPlanes: 010000000100000001000000010000000100000001000000000000000000000000000000000000000000000000000000
+  equippedPlane: 1

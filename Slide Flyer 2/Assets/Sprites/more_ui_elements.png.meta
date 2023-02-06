@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: more_ui_elements_2
+      name: hole
       rect:
         serializedVersion: 2
         x: 256
@@ -276,13 +276,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: more_ui_elements_3
+      name: locked
       rect:
         serializedVersion: 2
-        x: 170
-        y: 128
-        width: 34
-        height: 36
+        x: 293
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,134 +290,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1813215e50b0dc40893025f157f67e7
-      internalID: -1582092284
+      spriteID: ac2096368766afb40aa0dd073da20d18
+      internalID: 736810489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: more_ui_elements_4
+      name: equipped_slot
       rect:
         serializedVersion: 2
-        x: 210
-        y: 128
+        x: 255
+        y: 155
         width: 34
-        height: 36
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73351b5e991702a41909ff385256505d
-      internalID: -2107640742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: more_ui_elements_5
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 128
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fa2d9a736c18094195b4b3aa8cc83cf
-      internalID: -1782260811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: more_ui_elements_6
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 128
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef2fb6b3f7fab39438fc4814fe9429c5
-      internalID: 490862817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: more_ui_elements_7
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 128
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7151f18da7d013449af8b8eed8cf91c5
-      internalID: -177833559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: home
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 88
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 5, z: 3, w: 3}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa3fdcf85673b04abe5e2151031f507
-      internalID: 1772353601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: options
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 88
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 7, z: 4, w: 5}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b95f6218952cfd842b886395d2f8d30f
-      internalID: -514788895
+      spriteID: 6fda2579ec7ff4d419769957b6a4816d
+      internalID: 1449701894
       vertices: []
       indices: 
       edges: []
@@ -434,8 +329,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       fill: -91787528
+      equipped_slot: 1449701894
       more_ui_elements_0: 487093583
+      hole: 1338699968
       more_ui_elements_7: -177833559
+      locked: 736810489
       options: -514788895
       more_ui_elements_1: -424763010
       handle: 1805175788
@@ -443,7 +341,6 @@ TextureImporter:
       home: 1772353601
       more_ui_elements_5: -1782260811
       more_ui_elements_3: -1582092284
-      more_ui_elements_2: 1338699968
       more_ui_elements_4: -2107640742
       more_ui_elements_6: 490862817
       border: -1371283678

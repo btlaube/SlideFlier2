@@ -19,4 +19,8 @@ public class PlayerStats : ScriptableObject {
     public ProjectileObject equippedProjectile;
     public ProjectileObject defaultProjectile;
     public int projectileCost;
+
+    public int playerEquippedSprite;
+    public int[] unlockedPlanes;
+    public int equippedPlane;
 }
