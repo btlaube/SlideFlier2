@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7f7825f7ea18e46b8da26432196082, type: 3}
-  m_Name: PlayerCoins
+  m_Script: {fileID: 11500000, guid: 76ed397dd51087b4ca8bf4f590d82f06, type: 3}
+  m_Name: EquippedPlaneChanged
   m_EditorClassIdentifier: 
-  value: 0

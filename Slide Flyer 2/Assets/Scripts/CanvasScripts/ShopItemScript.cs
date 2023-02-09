@@ -39,6 +39,12 @@ public class ShopItemScript : MonoBehaviour {
         }   
     }
 
+    public void SetPurchased() {
+        Destroy(buyButton);
+        Destroy(lockedSprite);
+        purchased = true;
+    }
+
     public void Equip() {
         if (purchased) {
             //equip plane

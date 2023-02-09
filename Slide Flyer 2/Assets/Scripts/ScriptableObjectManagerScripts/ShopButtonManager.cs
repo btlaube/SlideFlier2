@@ -13,6 +13,18 @@ public class ShopButtonManager : MonoBehaviour {
         foreach(Transform child in transform) {
             shopItems.Add(child.gameObject);
         }
+        SetButtons();
+    }
+
+    private void SetButtons() {
+        for (int i = 0; i < shopItems.Count; i++) {
+            if (playerStats.unlockedPlanes[i] == 1) {
+                shopItems[i].GetComponent<ShopItemScript>().SetPurchased();
+            }
+            if (playerStats.equippedPlane == i) {
+                shopItems[i].GetComponent<ShopItemScript>().Equip();
+            }
+        }
     }
 
     public void AddPlane(GameObject shopItem) {
@@ -31,7 +43,7 @@ public class ShopButtonManager : MonoBehaviour {
             }
         }
 
-        //OnEquippedPlaneChanged();
+        OnEquippedPlaneChanged();
     }
 
     public void OnEquippedPlaneChanged() {

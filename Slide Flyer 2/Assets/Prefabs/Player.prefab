@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 1677546211}
   - component: {fileID: 1452664365}
   - component: {fileID: 6603167462888881907}
+  - component: {fileID: -3262250360683874550}
   - component: {fileID: 7682099321126563194}
   m_Layer: 6
   m_Name: Player
@@ -330,6 +331,34 @@ MonoBehaviour:
   - {fileID: -63800401, guid: bc05bacf3d543014abcfa71c1772191b, type: 3}
   - {fileID: 432559175, guid: bc05bacf3d543014abcfa71c1772191b, type: 3}
   - {fileID: 52149702, guid: bc05bacf3d543014abcfa71c1772191b, type: 3}
+--- !u!114 &-3262250360683874550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7151285686490709383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e247913ada476f649bde597777f81c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d1e495871b11bee438044ef83a17108c, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6603167462888881907}
+        m_TargetAssemblyTypeName: PlayerSpriteController, Assembly-CSharp
+        m_MethodName: UpdatePlayerSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7682099321126563194
 MonoBehaviour:
   m_ObjectHideFlags: 0

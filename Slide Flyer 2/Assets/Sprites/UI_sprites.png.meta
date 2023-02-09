@@ -1262,6 +1262,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shop
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 324
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960d0f17b06c4e0429cdaaa9cf31a747
+      internalID: 38288184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leaderboard
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 300
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bfc6dfa7f13454e962071b59a7a1e0
+      internalID: 2010469089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: info
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 300
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5ae2658b48a82449c6e489ffde1911
+      internalID: -1648963872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1282,12 +1345,14 @@ TextureImporter:
       UI_sprites_35: -287351588
       UI_sprites_46: -801190880
       UI_sprites_44: 1560950209
+      info: -1648963872
       UI_sprites_10: -531248868
       UI_sprites_24: -1003990644
       UI_sprites_0: -274638258
       UI_sprites_2: -1675247478
       UI_sprites_30: -1354509212
       UI_sprites_9: 996116873
+      leaderboard: 2010469089
       UI_sprites_8: -1644360869
       UI_sprites_43: -338959058
       UI_sprites_38: 2006016805
@@ -1297,9 +1362,9 @@ TextureImporter:
       UI_sprites_50: -1513443773
       UI_sprites_26: -1378342821
       controls_right_on: 875124858
-      UI_sprites_5: -1875925860
       UI_sprites_40: -1371965441
       UI_sprites_54: -1311825584
+      UI_sprites_5: -1875925860
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
@@ -1327,6 +1392,7 @@ TextureImporter:
       UI_sprites_53: -1898809197
       UI_sprites_13: 1104298903
       UI_sprites_22: 1897767906
+      shop: 38288184
       UI_sprites_34: -1245572345
       UI_sprites_28: -1144692847
       new_options: -882681497

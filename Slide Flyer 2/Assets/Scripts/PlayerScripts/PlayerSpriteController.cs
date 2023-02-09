@@ -9,9 +9,13 @@ public class PlayerSpriteController : MonoBehaviour {
     void Awake() {
         sr = GetComponent<SpriteRenderer>();
     }
-            
+
+    void Start() {
+        UpdatePlayerSprite();
+    }
+
     public void UpdatePlayerSprite() {
-        sr.sprite = planeSprites[playerStats.playerEquippedSprite];
+        sr.sprite = planeSprites[playerStats.equippedPlane];
     }
 
 }
