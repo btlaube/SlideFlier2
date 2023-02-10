@@ -23,11 +23,7 @@ public class ShopItemScript : MonoBehaviour {
     void Start() {
         planeIcon.sprite = planeSprite;
     }
-
-    //public void SetLocked() {
-    //    planeIcon.sprite = lockedSprite;
-    //}
-
+    
     public void Purchase() {
         if (playerStats.playerCoins.value >= cost) {
             playerStats.playerCoins.value -= cost;
@@ -47,8 +43,6 @@ public class ShopItemScript : MonoBehaviour {
 
     public void Equip() {
         if (purchased) {
-            //equip plane
-            Debug.Log("Equipping plane");
             equippedBorder.SetActive(true);
             shopButtonManager.EquipPlane(gameObject);
         }

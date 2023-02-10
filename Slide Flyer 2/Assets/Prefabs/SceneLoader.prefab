@@ -181,7 +181,7 @@ MonoBehaviour:
     m_Bits: 4294967295
 --- !u!95 &4476408040262402300
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -198,7 +198,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!225 &4476408040262402301
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -257,4 +257,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 4476408040262402300}
+  sceneChanged: {fileID: 11400000, guid: 2336724bbc883554cb9cc721ed6b88ed, type: 2}
   transitionTime: 1

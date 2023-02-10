@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class LevelPlayAds : MonoBehaviour {
-    
+    /*
     void Start() {
         IronSource.Agent.init("184ab2c5d");
         IronSource.Agent.validateIntegration();
@@ -63,6 +63,7 @@ public class LevelPlayAds : MonoBehaviour {
     void BannerAdLeftApplicationEvent() {
     }
     /************* Banner AdInfo Delegates *************/
+    /*
     //Invoked once the banner has loaded
     void BannerOnAdLoadedEvent(IronSourceAdInfo adInfo) {
     }
@@ -81,5 +82,5 @@ public class LevelPlayAds : MonoBehaviour {
     //Invoked when the user leaves the app
     void BannerOnAdLeftApplicationEvent(IronSourceAdInfo adInfo) {
     }
-
+    */
 }

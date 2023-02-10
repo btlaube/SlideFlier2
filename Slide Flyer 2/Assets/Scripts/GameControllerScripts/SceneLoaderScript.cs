@@ -8,6 +8,7 @@ public class SceneLoaderScript : MonoBehaviour
     public static SceneLoaderScript instance;
     public Animator transition;
 
+    [SerializeField] private GameEvent sceneChanged;
     [SerializeField] private float transitionTime = 1f;
 
     void Awake() {
@@ -32,6 +33,7 @@ public class SceneLoaderScript : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(levelIndex);
+        sceneChanged.TriggerEvent();
 
         transition.SetTrigger("End");
     }
