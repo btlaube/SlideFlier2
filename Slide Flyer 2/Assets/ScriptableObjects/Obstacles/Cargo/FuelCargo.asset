@@ -15,10 +15,10 @@ MonoBehaviour:
   speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
   damage: {fileID: 11400000, guid: dcec39694365a144eb9e7e51877953ae, type: 2}
   sprites:
-  - {fileID: -2005690496, guid: c36b81f05d9786546aebc73f8b9fbe3b, type: 3}
-  - {fileID: -188639596, guid: c36b81f05d9786546aebc73f8b9fbe3b, type: 3}
-  - {fileID: -120132155, guid: c36b81f05d9786546aebc73f8b9fbe3b, type: 3}
-  - {fileID: 663713962, guid: c36b81f05d9786546aebc73f8b9fbe3b, type: 3}
+  - {fileID: 1309026101, guid: 62d6fa94d9d4c8b4ea8a39b312373441, type: 3}
+  - {fileID: 1577752272, guid: 62d6fa94d9d4c8b4ea8a39b312373441, type: 3}
+  - {fileID: 1008489746, guid: 62d6fa94d9d4c8b4ea8a39b312373441, type: 3}
+  - {fileID: -1856531509, guid: 62d6fa94d9d4c8b4ea8a39b312373441, type: 3}
   health: 12
   drop: {fileID: 11400000, guid: 618d6ffdf3d14be4e915b68a4d81b9a0, type: 2}
   breakEffect: {fileID: 6389607975022516491, guid: ea9d5b55c35934a448fa4d44f6e8cbe8, type: 3}
