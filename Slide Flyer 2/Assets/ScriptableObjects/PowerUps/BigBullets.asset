@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac092d9a87dd7e47b16a995dcfb973b, type: 3}
+  m_Name: BigBullets
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -969826104, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
+  speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
+  duration: 10
+  count: 7
+  timer: 140
+  playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
+  bigBullets: {fileID: 11400000, guid: 54c19425b384cc24e8de380ab8cb8a83, type: 2}

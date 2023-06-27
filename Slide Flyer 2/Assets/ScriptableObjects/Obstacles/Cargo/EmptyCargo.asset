@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a78035bc22222b4795ec4c1964647d4, type: 3}
+  m_Name: EmptyCargo
+  m_EditorClassIdentifier: 
+  speed: {fileID: 11400000, guid: 20d14a590fabcf44dab61df4f5a566f7, type: 2}
+  damage: {fileID: 11400000, guid: dcec39694365a144eb9e7e51877953ae, type: 2}
+  sprites:
+  - {fileID: 2123924402, guid: be61061813e25a5479bac7e113eeb9f6, type: 3}
+  - {fileID: -1362493417, guid: be61061813e25a5479bac7e113eeb9f6, type: 3}
+  - {fileID: -1104587449, guid: be61061813e25a5479bac7e113eeb9f6, type: 3}
+  - {fileID: -907779099, guid: be61061813e25a5479bac7e113eeb9f6, type: 3}
+  health: 12
+  drop: {fileID: 0}
+  breakEffect: {fileID: 8016574566517186685, guid: d3113eb93b96efc4db28bd7f35985e72, type: 3}

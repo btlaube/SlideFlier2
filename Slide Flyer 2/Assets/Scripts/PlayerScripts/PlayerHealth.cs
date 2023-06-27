@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-    [SerializeField] private PlayerHealthInt currentHealth;
-    [SerializeField] private PlayerHealthInt maxHealth;
-
+    [SerializeField] private PlayerStats playerStats;
     private bool dead;
-
-    void Start() {
-        currentHealth.value = maxHealth.value;
+    private ObjectAudioSource audioSource;
+    
+    void Awake() {
+        audioSource = GetComponent<ObjectAudioSource>();
     }
 
     public void TakeDamage(int damage) {
-        currentHealth.value = Mathf.Clamp(currentHealth.value - damage, 0, maxHealth.value);
+        playerStats.playerCurrentHealth.value = Mathf.Clamp(playerStats.playerCurrentHealth.value - damage, 0, playerStats.playerMaxHealth.value);
 
-        if(currentHealth.value > 0) {
-            //audioManager.Play("PlayerHit");
+        if(playerStats.playerCurrentHealth.value > 0) {
+            audioSource.Play("PlayerHit");
         }
         else {
             if(!dead) {
@@ -28,7 +27,6 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     private void Deactivate() {
-        //Game event end game
         Destroy(gameObject);
     }
 

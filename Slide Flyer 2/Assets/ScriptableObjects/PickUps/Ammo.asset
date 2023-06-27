@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Ammo
   m_EditorClassIdentifier: 
   speed: {fileID: 11400000, guid: d6adf9b6f55d626408e695ad9414dafb, type: 2}
-  sprite: {fileID: -597142503, guid: 0ba414a2b113ac844adf84d5faa99b73, type: 3}
+  sprite: {fileID: -2062279969, guid: f816405bb0e413b48ac319d043b2d507, type: 3}
   ability: Ammo
+  pickUpSound: Ammo

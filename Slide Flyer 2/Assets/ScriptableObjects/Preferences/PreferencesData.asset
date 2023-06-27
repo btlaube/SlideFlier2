@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010fe076e9c3a11429dabc4d011582c2, type: 3}
+  m_Name: PreferencesData
+  m_EditorClassIdentifier: 
+  soundEffectVolume: {fileID: 11400000, guid: b2c832f5a601545419b343d3d47f8079, type: 2}
+  musicVolume: {fileID: 11400000, guid: 1c752f892984408489d50572447df005, type: 2}
