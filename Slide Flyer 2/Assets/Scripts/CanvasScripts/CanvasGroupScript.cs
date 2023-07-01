@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CanvasGroupScript : MonoBehaviour {
     
+    public TimeManager timeManager;
+
     public void LoadScene(int sceneToLoad) {
         SceneLoaderScript.instance.LoadScene(sceneToLoad);
     }
@@ -20,15 +22,28 @@ public class CanvasGroupScript : MonoBehaviour {
     }
 
     public void Lose() {
-        StopTime();
+        // StopTime();
+        //DisableObjects();
+        DisableObjectsCaller();
         transform.GetChild(5).gameObject.SetActive(true);
     }
 
     public void Continue()
     {
+        // EnableObjects();
+        Invoke("EnableObjectsTimer", 3.0f);
         transform.GetChild(4).gameObject.SetActive(false);
         transform.GetChild(5).gameObject.SetActive(false);
-        Invoke("ResumeTime", 3.0f);
+    }
+
+    public void DisableObjectsCaller()
+    {
+        timeManager.DisableObjects();
+    }
+
+    public void EnableObjectsTimer()
+    {
+        timeManager.EnableObjects();
     }
 
     public void ShowOptionsMenu() {
