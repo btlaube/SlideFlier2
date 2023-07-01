@@ -14,14 +14,21 @@ public class CanvasGroupScript : MonoBehaviour {
     }
 
     public void Resume() {
-        Time.timeScale = 1f;
+        ResumeTime();
         transform.GetChild(4).gameObject.SetActive(false);
         transform.GetChild(5).gameObject.SetActive(false);
     }
 
     public void Lose() {
-        Time.timeScale = 0f;
+        StopTime();
         transform.GetChild(5).gameObject.SetActive(true);
+    }
+
+    public void Continue()
+    {
+        transform.GetChild(4).gameObject.SetActive(false);
+        transform.GetChild(5).gameObject.SetActive(false);
+        Invoke("ResumeTime", 3.0f);
     }
 
     public void ShowOptionsMenu() {
@@ -34,6 +41,16 @@ public class CanvasGroupScript : MonoBehaviour {
 
     public void ButtonClick() {
         AudioManager.instance.Play("ButtonClick");
+    }
+
+    private void StopTime()
+    {
+        Time.timeScale = 0f;
+    }
+
+    private void ResumeTime()
+    {
+        Time.timeScale = 1f;
     }
 
 }
