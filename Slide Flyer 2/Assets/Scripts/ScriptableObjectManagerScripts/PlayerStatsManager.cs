@@ -26,4 +26,11 @@ public class PlayerStatsManager : MonoBehaviour {
         playerStats.playerCurrentFuel.value = Mathf.Clamp(playerStats.playerCurrentFuel.value - Time.deltaTime * playerStats.fuelDecrementRate, 0, playerStats.playerMaxFuel.value);
     }
 
+    public void RespawnPlayer()
+    {
+        playerStats.playerCurrentAmmo.value = playerStats.playerMaxAmmo.value;
+        playerStats.playerCurrentHealth.value = playerStats.playerMaxHealth.value;
+        playerStats.playerCurrentFuel.value = playerStats.playerMaxFuel.value;
+    }
+
 }

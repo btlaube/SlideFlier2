@@ -7,9 +7,14 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField] private PlayerStats playerStats;
     private bool dead;
     private ObjectAudioSource audioSource;
+
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private BoxCollider2D bc;
     
     void Awake() {
         audioSource = GetComponent<ObjectAudioSource>();
+        sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
     }
 
     public void TakeDamage(int damage) {
@@ -26,8 +31,16 @@ public class PlayerHealth : MonoBehaviour {
         }
     }
 
+    public void Respawn()
+    {
+        sr.enabled = true;
+        bc.enabled = true;
+    }
+
     private void Deactivate() {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        sr.enabled = false;
+        bc.enabled = false;
     }
 
 }
