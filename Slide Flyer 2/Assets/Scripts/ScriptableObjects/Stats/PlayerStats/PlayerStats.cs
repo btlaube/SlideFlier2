@@ -22,4 +22,6 @@ public class PlayerStats : ScriptableObject {
 
     public int[] unlockedPlanes;
     public int equippedPlane;
+
+    public int adsWatched;
 }

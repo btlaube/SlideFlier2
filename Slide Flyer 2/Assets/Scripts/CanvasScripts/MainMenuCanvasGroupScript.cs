@@ -14,18 +14,22 @@ public class MainMenuCanvasGroupScript : MonoBehaviour {
     }
 
     public void OpenInfoCanvas() {
+        transform.GetChild(2).gameObject.SetActive(false);
         transform.GetChild(4).gameObject.SetActive(true);
     }
 
     public void CloseInfoCanvas() {
+        transform.GetChild(2).gameObject.SetActive(true);
         transform.GetChild(4).gameObject.SetActive(false);
     }
 
     public void OpenShopCanvas() {
+        transform.GetChild(2).gameObject.SetActive(false);
         transform.GetChild(3).gameObject.SetActive(true);
     }
 
     public void CloseShopCanvas() {
+        transform.GetChild(2).gameObject.SetActive(true);
         transform.GetChild(3).gameObject.SetActive(false);
     }
 
