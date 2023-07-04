@@ -264,7 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 12, z: 8, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -369,7 +369,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 7, z: 7, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -486,10 +486,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: panel
+      name: inverse_box
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 128
         width: 64
         height: 64
@@ -507,10 +507,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_sprites_18
+      name: small_box
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 160
         width: 32
         height: 32
@@ -1271,7 +1271,7 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,7 +1292,7 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1313,7 +1313,7 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1321,6 +1321,27 @@ TextureImporter:
       bones: []
       spriteID: ff5ae2658b48a82449c6e489ffde1911
       internalID: -1648963872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big_box
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 13, z: 14, w: 11}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48f96b8a9294dd4d9d574451000f684
+      internalID: 1997823008
       vertices: []
       indices: 
       edges: []
@@ -1341,6 +1362,7 @@ TextureImporter:
       controls_right_off: 650098928
       UI_sprites_52: 1589989569
       UI_sprites_19: 1044173474
+      big_box: 1997823008
       UI_sprites_15: -256976938
       UI_sprites_35: -287351588
       UI_sprites_46: -801190880
@@ -1353,31 +1375,31 @@ TextureImporter:
       UI_sprites_30: -1354509212
       UI_sprites_9: 996116873
       leaderboard: 2010469089
+      inverse_box: -132216000
       UI_sprites_8: -1644360869
       UI_sprites_43: -338959058
       UI_sprites_38: 2006016805
+      small_box: -512398359
       new_home: 45155970
       UI_sprites_7: 471368406
       UI_sprites_1: -1244314178
       UI_sprites_50: -1513443773
       UI_sprites_26: -1378342821
       controls_right_on: 875124858
+      UI_sprites_5: -1875925860
       UI_sprites_40: -1371965441
       UI_sprites_54: -1311825584
-      UI_sprites_5: -1875925860
       UI_sprites_27: -1788687664
       UI_sprites_55: -1426257105
       UI_sprites_6: -1225987781
       UI_sprites_3: -1241414622
       UI_sprites_36: -1609463636
-      UI_sprites_18: -512398359
-      UI_sprites_41: 628009538
       UI_sprites_32: 1843644610
+      UI_sprites_41: 628009538
       UI_sprites_47: -1042133212
       UI_sprites_51: 1648722418
       UI_sprites_45: -934651118
       UI_sprites_49: -213825528
-      panel: -132216000
       ad_icon: -961537211
       new_pause: 479767785
       UI_sprites_29: 1928843526
