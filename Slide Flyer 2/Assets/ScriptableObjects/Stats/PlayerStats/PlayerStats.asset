@@ -26,5 +26,11 @@ MonoBehaviour:
   equippedProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   defaultProjectile: {fileID: 11400000, guid: 14820dad85f901f4fad26412b96ba0f3, type: 2}
   projectileCost: 1
+<<<<<<< Updated upstream
   unlockedPlanes: 010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   equippedPlane: 0
+=======
+  unlockedPlanes: {fileID: 11400000, guid: 13d5b5c731b8ce94097497b3366ecaaf, type: 2}
+  equippedPlane: 0
+  adsWatched: 0
+>>>>>>> Stashed changes

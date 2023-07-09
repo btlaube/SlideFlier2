@@ -228,6 +228,23 @@ public class AdsManager : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    public void OnDeathInterstitialCounter()
+    {
+        currentDeaths.value++;
+        Debug.Log(currentDeaths.value + " " + interstitialCounter.value);
+        if (currentDeaths.value == interstitialCounter.value)
+        {
+            LoadInterstitial();
+            // Invoke("ShowInterstitial", 1.0f);
+            // ShowInterstitial();
+            currentDeaths.value = 0;
+            interstitialCounter.value = UnityEngine.Random.Range(1, 5);
+        }
+    }
+
+>>>>>>> Stashed changes
     public void LoadInterstitial()
     {
         Debug.Log("unity-script: LoadInterstitialButtonClicked");
@@ -390,6 +407,7 @@ public class AdsManager : MonoBehaviour
 
     void InterstitialOnAdReadyEvent(IronSourceAdInfo adInfo) {
         Debug.Log("unity-script: I got InterstitialOnAdReadyEvent With AdInfo " + adInfo.ToString());
+        ShowInterstitial();
     }
 
     void InterstitialOnAdLoadFailed(IronSourceError ironSourceError) {

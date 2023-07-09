@@ -2800,10 +2800,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 630727712874247700, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
-      propertyPath: onEventTriggered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1393708297, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
     - target: {fileID: 8528206124899027352, guid: 25f5d9d699e75554b8e4c09812c52ca0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4920,6 +4916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6668961ca51069241877aa37c3e6d065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 --- !u!1 &742421332
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,6 +12437,10 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847299715}
   m_CullTransparentMesh: 1
+=======
+  interstitialCounter: {fileID: 0}
+  currentDeaths: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &1853265743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12461,6 +12462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< Updated upstream
       value: 0.8872313
       objectReference: {fileID: 0}
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
@@ -12470,6 +12472,17 @@ PrefabInstance:
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.8872313
+=======
+      value: 0.887858
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.887858
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.887858
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7151285686490709381, guid: 4bfc919a36eb07249bb3bf447ca11f22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12524,6 +12537,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1898155946}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 716209406845258982, guid: 0d95a90f9c0f8b84583aed1d3ba2910a, type: 3}
       propertyPath: m_Name
       value: Shop Item (19)
@@ -12537,6 +12551,13 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 716209406845258983, guid: 0d95a90f9c0f8b84583aed1d3ba2910a, type: 3}
+=======
+    - target: {fileID: 1488025706846265708, guid: 4989bf6124132974696e0056176a5205, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 740864044}
+    - target: {fileID: 3715176513358046354, guid: 4989bf6124132974696e0056176a5205, type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
@@ -12629,6 +12650,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop Item (20)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 716209406845258983, guid: 0d95a90f9c0f8b84583aed1d3ba2910a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12717,6 +12739,12 @@ PrefabInstance:
       propertyPath: planeSprite
       value: 
       objectReference: {fileID: 1694347751, guid: bc05bacf3d543014abcfa71c1772191b, type: 3}
+=======
+    - target: {fileID: 7203940523388848839, guid: 4989bf6124132974696e0056176a5205, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 740864042}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d95a90f9c0f8b84583aed1d3ba2910a, type: 3}
 --- !u!1001 &1889485100

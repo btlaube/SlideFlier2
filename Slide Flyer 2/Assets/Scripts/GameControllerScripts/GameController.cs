@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class GameController : MonoBehaviour {
     
@@ -27,6 +28,16 @@ public class GameController : MonoBehaviour {
         if (data != null) {
             playerStats.playerCoins.value = data.coinsAmount;
             playerStats.playerHighscore.value = data.highscore;
+            if (data.unlockedPlanes == null)
+            {
+                playerStats.unlockedPlanes.values = Enumerable.Repeat(0, 24).ToArray();
+            }
+            else
+            {
+                playerStats.unlockedPlanes.values = data.unlockedPlanes;
+            }
+            playerStats.unlockedPlanes.values[0] = 1;
+            // Debug.Log(data.unlockedPlanes);
         }
     }
 

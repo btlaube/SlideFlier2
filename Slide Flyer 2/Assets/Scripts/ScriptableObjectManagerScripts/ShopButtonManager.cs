@@ -8,6 +8,7 @@ public class ShopButtonManager : MonoBehaviour {
     [SerializeField] private List<GameObject> shopItems;
 
     [SerializeField] private GameEvent equippedPlaneChanged;
+    [SerializeField] private GameEvent purchasedPlane;
 
     void Start() {
         foreach(Transform child in transform) {
@@ -18,7 +19,7 @@ public class ShopButtonManager : MonoBehaviour {
 
     private void SetButtons() {
         for (int i = 0; i < shopItems.Count; i++) {
-            if (playerStats.unlockedPlanes[i] == 1) {
+            if (playerStats.unlockedPlanes.values[i] == 1) {
                 shopItems[i].GetComponent<ShopItemScript>().SetPurchased();
             }
             if (playerStats.equippedPlane == i) {
@@ -29,7 +30,9 @@ public class ShopButtonManager : MonoBehaviour {
 
     public void AddPlane(GameObject shopItem) {
         int index = shopItems.FindIndex(a => a == shopItem);
-        playerStats.unlockedPlanes[index] = 1;
+        playerStats.unlockedPlanes.values[index] = 1;
+
+        OnPlanePurchased();
     }
 
     public void EquipPlane(GameObject shopItem) {
@@ -48,6 +51,11 @@ public class ShopButtonManager : MonoBehaviour {
 
     public void OnEquippedPlaneChanged() {
         equippedPlaneChanged.TriggerEvent();
-    }    
+    }
+
+    public void OnPlanePurchased()
+    {
+        purchasedPlane.TriggerEvent();
+    }
 
 }
