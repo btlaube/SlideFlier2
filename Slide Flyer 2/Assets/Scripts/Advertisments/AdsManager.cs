@@ -8,16 +8,8 @@ using System;
 public class AdsManager : MonoBehaviour
 {
 
-   public PlayerAmmoInt interstitialCounter;
-   public PlayerAmmoInt currentDeaths;
-
-    private void Awake()
-    {
-        // Interstial ads counter
-        // interstitialCounter.value = UnityEngine.Random.Range(1, 5);
-        // currentDeaths.value = 0;
-        // Debug.Log(currentDeaths.value + " " + interstitialCounter.value);
-    }
+   public Int interstitialCounter;
+   public Int currentDeaths;
 
     public void Start()
     {
@@ -164,8 +156,7 @@ public class AdsManager : MonoBehaviour
         if (currentDeaths.value == interstitialCounter.value)
         {
             LoadInterstitial();
-            Invoke("ShowInterstitial", 1.0f);
-            // ShowInterstitial();
+            // Invoke("ShowInterstitial", 1.0f);
             currentDeaths.value = 0;
             interstitialCounter.value = UnityEngine.Random.Range(1, 5);
         }
@@ -333,6 +324,7 @@ public class AdsManager : MonoBehaviour
 
     void InterstitialOnAdReadyEvent(IronSourceAdInfo adInfo) {
         Debug.Log("unity-script: I got InterstitialOnAdReadyEvent With AdInfo " + adInfo.ToString());
+        ShowInterstitial();
     }
 
     void InterstitialOnAdLoadFailed(IronSourceError ironSourceError) {
