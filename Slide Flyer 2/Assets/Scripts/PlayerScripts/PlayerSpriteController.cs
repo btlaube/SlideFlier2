@@ -15,7 +15,7 @@ public class PlayerSpriteController : MonoBehaviour {
     }
 
     public void UpdatePlayerSprite() {
-        sr.sprite = planeSprites[playerStats.equippedPlane];
+        sr.sprite = planeSprites[playerStats.equippedPlaneIndex.value];
     }
 
 }

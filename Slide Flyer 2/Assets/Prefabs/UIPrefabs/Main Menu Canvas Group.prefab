@@ -2430,6 +2430,7 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
   shopItems: []
   equippedPlaneChanged: {fileID: 11400000, guid: d1e495871b11bee438044ef83a17108c, type: 2}
+  planePurchased: {fileID: 11400000, guid: 6591f5d43bfc7784a9054924ca79daaf, type: 2}
 --- !u!1 &278218096964867134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,6 +4605,7 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 2e5f0b6ffd99dad4b8844b1d9d0035c3, type: 2}
   shopItems: []
   equippedPlaneChanged: {fileID: 11400000, guid: d1e495871b11bee438044ef83a17108c, type: 2}
+  planePurchased: {fileID: 11400000, guid: 6591f5d43bfc7784a9054924ca79daaf, type: 2}
 --- !u!1 &278218097419472022
 GameObject:
   m_ObjectHideFlags: 0

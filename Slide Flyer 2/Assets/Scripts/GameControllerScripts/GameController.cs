@@ -27,6 +27,21 @@ public class GameController : MonoBehaviour {
         if (data != null) {
             playerStats.playerCoins.value = data.coinsAmount;
             playerStats.playerHighscore.value = data.highscore;
+            playerStats.equippedPlaneIndex.value = data.equippedPlaneIndex;
+            if (data.unlockedPlanes != null)
+            {
+                playerStats.unlockedPlanes.values = data.unlockedPlanes;
+            }
+            else
+            {
+                int size = 24;
+                playerStats.unlockedPlanes.values = new int[size];
+                for (int i = 0; i < size; i++)
+                {
+                    playerStats.unlockedPlanes.values[i] = 0;
+                }
+            }
+            playerStats.unlockedPlanes.values[0] = 1;
         }
     }
 
