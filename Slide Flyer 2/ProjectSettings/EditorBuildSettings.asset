@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: bd0cd1884fcf72a44aa6ca333cbe9286
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ironSourceAdsTest.unity
     guid: 7514bf596d026614bb3768d2a1bb48df
   - enabled: 0
@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: e595db5a4498ad9408bd016e6784b091
   - enabled: 0

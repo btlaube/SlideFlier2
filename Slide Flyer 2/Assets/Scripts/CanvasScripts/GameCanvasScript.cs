@@ -35,18 +35,23 @@ public class GameCanvasScript : MonoBehaviour {
         ammoFillBar.fillAmount = (float)(playerStats.playerCurrentAmmo.value)/(float)(playerStats.playerMaxAmmo.value);
     }
 
-    public void UpdateFireButtonLayout() {
-        if (preferencesData.fireButtonLayout == 1) {
+    public void UpdateFireButtonLayout()
+    {
+        if (preferencesData.fireButtonLayout == 1)
+        {
+            // Set anchor to bottom-left
             fireButton.anchorMin = new Vector2(0, 0);
             fireButton.anchorMax = new Vector2(0, 0);
-            fireButton.anchoredPosition = new Vector2(250, 250);
-
+            fireButton.pivot = new Vector2(0, 0); // Pivot at bottom-left
         }
-        else {
+        else
+        {
+            // Set anchor to bottom-right
             fireButton.anchorMin = new Vector2(1, 0);
             fireButton.anchorMax = new Vector2(1, 0);
-            fireButton.anchoredPosition = new Vector2(-250, 250);
+            fireButton.pivot = new Vector2(1, 0); // Pivot at bottom-right
         }
     }
+
 
 }

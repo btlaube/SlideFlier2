@@ -22,6 +22,14 @@ public class PlayerFire : MonoBehaviour
                 fireTimer = Time.deltaTime;
             }
         }
+        if (Input.GetKey(KeyCode.X))
+        {
+            CheckFire(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.X))
+        {
+            CheckFire(false);
+        }
     }
 
     public void CheckFire(bool fireBool) {
